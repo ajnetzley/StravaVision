@@ -1,2 +1,4 @@
 api_test.py
 /activities_data
+/old
+/__pycache__
