@@ -1,5 +1,9 @@
+.env
+strava_token.pkl
 api_test.py
 api_test.ipynb
+client.secret
 /activities_data
 /old
 /__pycache__
+/strava_api
