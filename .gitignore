@@ -7,3 +7,4 @@ client.secret
 /old
 /__pycache__
 /strava_api
+/pages/__pycache__
