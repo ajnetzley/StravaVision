@@ -2,7 +2,7 @@
 # StravaVision
 StravaVision is a repository and Streamlit-based app where I do a deep dive into a variety of my Strava activities, looking into different metrics and creating different visualizations.
 
-![StravaVision App Homepage](app_homepage.png)
+![StravaVision App Homepage](images/app_homepage.png)
 
 ## Repository Structure
 ```markdown
