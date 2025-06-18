@@ -8,6 +8,7 @@ This module provides the tabular visualization of the hardest activities I have 
 
 import pandas as pd
 import streamlit as st
+import base64
 from pandas.api.types import (
     is_categorical_dtype,
     is_datetime64_any_dtype,
@@ -15,7 +16,46 @@ from pandas.api.types import (
     is_object_dtype,
 )
 
-st.title("Hardest Activites")
+# Add background image using CSS
+import base64
+
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# You can use your StravaAppIcon.png or any other image
+# For now, I'll create a simple CSS background
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-attachment: fixed;
+    }
+    
+    /* Add some transparency to content containers for better readability */
+    .block-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-top: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    }
+    
+    /* Style the title */
+    h1 {
+        color: #2c3e50;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+
+)
+
+
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -96,4 +136,12 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 df = pd.read_csv("activities_data/cleaned_activities.csv")
 
-st.dataframe(filter_dataframe(df))
+# Create a layout with the dataframe on the left and image on the right
+col1, col2 = st.columns([6, 1])
+
+with col1:
+    st.title("Hardest Activities")
+    st.dataframe(filter_dataframe(df), use_container_width=True)
+
+with col2:
+    st.image("images/hardest_activities.png", caption="Hardest Activities Visualization", use_container_width=True)
