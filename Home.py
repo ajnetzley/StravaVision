@@ -63,10 +63,17 @@ cols = st.columns(3)
 def switch_to(path):
     st.switch_page(path)
 
+# Load the hardest_activities image and encode it in base64
 with open("images/hardest_activities.png", "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data)
 data = "data:image/png;base64," + encoded.decode("utf-8")
+
+# Load the sky_log image and encode it in base64
+with open("images/Sky_Log.png", "rb") as f:
+    data2 = f.read()
+    encoded2 = base64.b64encode(data2)
+data2 = "data:image/png;base64," + encoded2.decode("utf-8")
 
 # Define card metadata
 card_metadata = [
@@ -85,10 +92,10 @@ card_metadata = [
         "key": "1st_placeholder"
     },
     {
-        "title": "2nd Placeholder",
-        "text": "Another card for a future analytics view or stats breakdown.",
-        "image": data,
-        "on_click": partial(switch_to, "pages/Placeholder2.py"),
+        "title": "Sky Log",
+        "text": "A summary of my highest altitude activities.",
+        "image": data2,
+        "on_click": partial(switch_to, "pages/Sky_Log.py"),
         "key": "2nd_placeholder"
     }
 ]
