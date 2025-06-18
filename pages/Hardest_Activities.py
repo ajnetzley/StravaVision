@@ -16,8 +16,8 @@ from styles import apply_gradient_background
 # Apply styling for this data page
 apply_gradient_background()
 
-# Read in the cleaned activities data
-df = pd.read_csv("activities_data/cleaned_activities.csv")
+# Read in the hardest activities data
+df = pd.read_csv("activities_data/hardest_activities.csv")
 
 # Formatting with the dataframe on the left, image ikon on the right
 col1, col2 = st.columns([6, 1])

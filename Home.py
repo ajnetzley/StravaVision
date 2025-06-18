@@ -9,7 +9,6 @@ This module provides the wrapper function for running the StravaVision App.
 import streamlit as st
 from datetime import datetime
 from functools import partial
-import base64
 
 from streamlit_card import card
 

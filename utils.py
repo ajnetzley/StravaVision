@@ -66,7 +66,7 @@ def load_data(refresh):
 
         # Convert list of dicts to DataFrame
         df = pd.DataFrame(data)
-        df.to_csv("activities_data/full_activities.csv", index=False)
+        df.to_csv("activities_data/full_raw_activities.csv", index=False)
 
     return df
 
@@ -212,8 +212,6 @@ def refresh_data_pipeline():
         # Compute the difficulty score
         filtered_activities = filtered_df.copy()
 
-        # Start by removing ski
-        filtered_activities = filtered_activities[filtered_activities['sport_type'] != 'AlpineSki']
         filtered_activities["distance_score"] = (df["distance"]*0.000621371)/ df["sport_type"].map(lambda x: activities_distance_divisors.get(x, 1))
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_gravel_ride_adjustment.get(x, 1))).round(2)
 
@@ -232,24 +230,44 @@ def refresh_data_pipeline():
         filtered_activities["Date"] = filtered_activities["start_date"].apply(convert_timestamp)
 
         filtered_activities["elev_high"] = filtered_activities["elev_high"]*3.28084
-        # Extract only cleaned columns
-        cleaned_activities = filtered_activities[["name", "Date", "sport_type", "Distance (miles)", "Total Elevation Gain (ft)","difficulty_score"]]
-        
-        # Filter and analyze output data
-        hardest_hiking_activities = cleaned_activities[cleaned_activities["sport_type"].isin(["TrailRun", "Hike"])].sort_values(by="difficulty_score", ascending=False).reset_index(drop=True)
-        hardest_biking_activities = cleaned_activities[cleaned_activities["sport_type"].isin(["MountainBikeRide", "GravelRide", "Ride"])].sort_values(by="difficulty_score", ascending=False).reset_index(drop=True)
-        hardest_running_activities = cleaned_activities[cleaned_activities["sport_type"].isin(["TrailRun", "Run"])].sort_values(by="difficulty_score", ascending=False).reset_index(drop=True)
-        hardest_offroad_riding_activities = cleaned_activities[cleaned_activities["sport_type"].isin(["MountainBikeRide", "GravelRide"])].sort_values(by="difficulty_score", ascending=False).reset_index(drop=True)
-        hardest_overall_activities = cleaned_activities.sort_values(by="difficulty_score", ascending=False).reset_index(drop=True)
-        
+
+        # Rename columns for clarity
+        filtered_activities.rename(columns={"name": "Activity Name", "sport_type": "Sport Type","difficulty_score": "Difficulty Score"}, inplace=True)
+
         # Save the cleaned activities data
-        hardest_overall_activities.to_csv("activities_data/cleaned_activities.csv", index=False)
+        filtered_activities.to_csv("activities_data/cleaned_activities.csv", index=False)
+
+        # Execute the data processing for each page, saving each after
+        hardest_overall_activities = process_hardest_activities(filtered_activities)
+        hardest_overall_activities.to_csv("activities_data/hardest_activities.csv", index=False)
         
         return True
         
     except Exception as e:
         print(f"Error in data refresh pipeline: {str(e)}")
         return False
+    
+def process_hardest_activities(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Processes the hardest activities DataFrame to filter and sort by difficulty score.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing activity data.
+
+    Returns:
+        pd.DataFrame: Processed DataFrame with relevant columns and sorted by difficulty score.
+    """
+    # Filter out ski activities
+    df = df[df['Sport Type'] != 'AlpineSki']
+
+    # Extract relevant columns
+    df = df[["Activity Name", "Date", "Sport Type", "Distance (miles)", "Total Elevation Gain (ft)", "Difficulty Score"]]
+
+    # Sort by difficulty score
+    hardest_overall_activities = df.sort_values(by="Difficulty Score", ascending=False).reset_index(drop=True)
+
+    return hardest_overall_activities
+
 
 def load_and_encode_image(image_path: str) -> str:
     """
@@ -275,6 +293,7 @@ def switch_to(path: str):
         path (str): The path of the page to switch to.
     """
     st.switch_page(path)
+    
 #############################
 ### Hardest_Activities.py ###
 #############################
