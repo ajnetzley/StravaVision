@@ -8,9 +8,10 @@ This module provides the wrapper function for running the StravaVision App.
 # Import packages
 import streamlit as st
 from datetime import datetime
-from streamlit_card import card
 from functools import partial
 import base64
+
+from streamlit_card import card
 
 # Import user modules
 from utils import refresh_data_pipeline
@@ -22,19 +23,25 @@ st.set_page_config(layout="wide")
 # Apply home page styling
 apply_gradient_background()
 
-# Title of the app
-st.title('StravaVision')
-st.subheader('An exploration into my world of Strava activities')
-
-# Add Refresh Data button on the far right
-
 # Initialize session state for last refresh time
 if 'last_refresh' not in st.session_state:
     st.session_state.last_refresh = None
 
-# Create columns for right-aligned refresh button
+###############
+### CONTENT ###
+###############
+
+# Title
+st.title('StravaVision')
+
+# Description and Refresh Data Button
 col1, col2 = st.columns([4, 1])
+with col1:
+    # Subtitle
+    st.subheader('An exploration into my world of Strava activities')
+
 with col2:
+    # Refresh Data Button
     if st.button("🔄 Refresh Data", help="Click to refresh your Strava activities data"):
         with st.spinner("Refreshing data... This may take a few moments."):
             success = refresh_data_pipeline()

@@ -28,8 +28,9 @@ from stravalib import Client
 # Import User Modules
 from config import STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET
 
-
-
+###############
+### Home.py ###
+###############
 def load_data(refresh):
     '''
     Loads the full activities data, either the previously saved csv, or by generating a new csv via a strava api call
@@ -67,8 +68,6 @@ def load_data(refresh):
         df.to_csv("activities_data/full_activities.csv", index=False)
 
     return df
-
-
 
 def get_strava_token(token_path="strava_token.pkl"):
     """
@@ -250,8 +249,10 @@ def refresh_data_pipeline():
     except Exception as e:
         print(f"Error in data refresh pipeline: {str(e)}")
         return False
- 
 
+#############################
+### Hardest_Activities.py ###
+#############################
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers filter columns.
