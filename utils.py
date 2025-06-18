@@ -25,6 +25,7 @@ from pandas.api.types import (
 import base64
 
 from stravalib import Client
+import reverse_geocoder as rg
 
 # Import User Modules
 from config import STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET
@@ -41,7 +42,7 @@ def load_data(refresh):
     
     '''
     if not refresh:
-        df = pd.read_csv("activities_data/full_activities.csv")
+        df = pd.read_csv("activities_data/full_raw_activities.csv")
 
     else:
 
@@ -60,9 +61,6 @@ def load_data(refresh):
         for activity in activities:
             activity_dict = vars(activity)
             data.append(activity_dict)
-
-        # Convert list of dicts to DataFrame
-        df = pd.DataFrame(data)
 
         # Convert list of dicts to DataFrame
         df = pd.DataFrame(data)
@@ -126,12 +124,16 @@ def refresh_data_pipeline():
         # Load data with refresh=True to get latest activities
         df = load_data(refresh=True)
         
-        # Clean up sport_type dtype
+        # Clean up sport_type and start_latlng dtype
         df['sport_type'] = df['sport_type'].astype(str).str.extract(r"root='(.+?)'")
+
+        df["start_latlng"] = df["start_latlng"].astype(str).str.extract(r"root=\[([\d\.\-]+),\s*([\d\.\-]+)\]"
+            ).apply(lambda x: (float(x[0]), float(x[1])) if pd.notnull(x[0]) and pd.notnull(x[1]) else None, axis=1)
 
         filtered_df = df[{
             "name", "start_date", "type", "sport_type",
-            "distance", "total_elevation_gain", "elev_high", "elev_low"
+            "distance", "total_elevation_gain", "elev_high", "elev_low", 
+            "start_latlng"
         }]
         
         # Hardcoded adjustments for activities with mixed types
@@ -209,8 +211,17 @@ def refresh_data_pipeline():
             12000: 0.78,
         }
         
+        def extract_location(latlng):
+            if not latlng or pd.isna(latlng):
+                return None, None, None
+            result = rg.search(latlng, mode=1)[0]  # mode=1 disables multithreading (safer for row-wise)
+            return result['name'], result['admin1'], result['cc']
+        
         # Compute the difficulty score
         filtered_activities = filtered_df.copy()
+
+        # Calculate the city, state, and country from the start_latlng
+        filtered_activities["location_city"], filtered_activities["location_state"], filtered_activities["location_country"] = zip(*filtered_activities["start_latlng"].apply(extract_location))
 
         filtered_activities["distance_score"] = (df["distance"]*0.000621371)/ df["sport_type"].map(lambda x: activities_distance_divisors.get(x, 1))
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_gravel_ride_adjustment.get(x, 1))).round(2)
@@ -229,10 +240,16 @@ def refresh_data_pipeline():
         filtered_activities["Total Elevation Gain (ft)"] = (filtered_activities["total_elevation_gain"]*3.28084).round(0).astype(int)
         filtered_activities["Date"] = filtered_activities["start_date"].apply(convert_timestamp)
 
-        filtered_activities["elev_high"] = filtered_activities["elev_high"]*3.28084
+        filtered_activities["elev_high"] *= 3.28084
 
         # Rename columns for clarity
-        filtered_activities.rename(columns={"name": "Activity Name", "sport_type": "Sport Type","difficulty_score": "Difficulty Score"}, inplace=True)
+        filtered_activities.rename(columns={"name": "Activity Name", 
+                                            "sport_type": "Sport Type",
+                                            "difficulty_score": "Difficulty Score",
+                                            "location_city": "City",
+                                            "location_state": "State",
+                                            "location_country": "Country"
+                                            }, inplace=True)
 
         # Save the cleaned activities data
         filtered_activities.to_csv("activities_data/cleaned_activities.csv", index=False)
@@ -240,6 +257,9 @@ def refresh_data_pipeline():
         # Execute the data processing for each page, saving each after
         hardest_overall_activities = process_hardest_activities(filtered_activities)
         hardest_overall_activities.to_csv("activities_data/hardest_activities.csv", index=False)
+
+        sky_log_activities = process_sky_log(filtered_activities)
+        sky_log_activities.to_csv("activities_data/sky_log_activities.csv", index=False)
         
         return True
         
@@ -268,6 +288,27 @@ def process_hardest_activities(df: pd.DataFrame) -> pd.DataFrame:
 
     return hardest_overall_activities
 
+def process_sky_log(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Processes the the cleaned dataframe to generate the Sky Log DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing activity data.
+
+    Returns:
+        pd.DataFrame: Processed DataFrame with relevant columns and sorted by difficulty score.
+    """
+    # Filter out activities without elevation
+    df = df[df['elev_high'] > 0]
+
+    # Extract relevant columns
+    #df = df[["Activity Name", "Date", "Sport Type", "Distance (miles)", "Total Elevation Gain (ft)", "Difficulty Score"]]
+
+    # Sort by difficulty score
+    sky_log_activities = df.sort_values(by="elev_high", ascending=False).reset_index(drop=True)
+
+    return sky_log_activities
+
 
 def load_and_encode_image(image_path: str) -> str:
     """
@@ -293,7 +334,7 @@ def switch_to(path: str):
         path (str): The path of the page to switch to.
     """
     st.switch_page(path)
-    
+
 #############################
 ### Hardest_Activities.py ###
 #############################
