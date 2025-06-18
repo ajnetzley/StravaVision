@@ -85,18 +85,6 @@ with col2:
 # Carousel Placeholder
 cols = st.columns(3)
 
-pages = [
-    {"name": "Hardest Activities", "image": "images/hardest_activities.png"},
-    {"name": "Placeholder2", "image": "https://via.placeholder.com/150?text=Viz"},
-    {"name": "Placeholder3", "image": "https://via.placeholder.com/150?text=Analysis"},
-]
-
-for col, page in zip(cols, pages):
-    with col:
-        if st.button(f"{page['name']}", type="primary"):
-            st.switch_page(f"pages/{page['name'].replace(' ', '_')}.py")  # Requires streamlit >= 1.22
-        st.image(page["image"])
-
 # Define a helper function for page switching
 def switch_to(path):
     st.switch_page(path)
