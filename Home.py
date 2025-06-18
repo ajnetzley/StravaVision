@@ -38,7 +38,7 @@ st.title('StravaVision')
 col1, col2 = st.columns([4, 1])
 with col1:
     # Subtitle
-    st.subheader('An exploration into my world of Strava activities')
+    st.subheader('A Reimagined Exploration of my Strava Activities')
 
 with col2:
     # Refresh Data Button
@@ -65,38 +65,44 @@ def switch_to(path):
 
 # Load the hardest_activities image and encode it in base64
 with open("images/hardest_activities.png", "rb") as f:
+    haImage = f.read()
+    encoded = base64.b64encode(haImage)
+haImage = "data:image/png;base64," + encoded.decode("utf-8")
+
+# Load the grind_graph image and encode it in base64
+with open("images/Grind_Graph.png", "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data)
-data = "data:image/png;base64," + encoded.decode("utf-8")
+ggImage = "data:image/png;base64," + encoded.decode("utf-8")
 
 # Load the sky_log image and encode it in base64
 with open("images/Sky_Log.png", "rb") as f:
-    data2 = f.read()
-    encoded2 = base64.b64encode(data2)
-data2 = "data:image/png;base64," + encoded2.decode("utf-8")
+    slImage = f.read()
+    encoded2 = base64.b64encode(slImage)
+slImage = "data:image/png;base64," + encoded2.decode("utf-8")
 
 # Define card metadata
 card_metadata = [
     {
         "title": "Hardest Activities",
         "text": "A summary of my hardest Strava activities based on difficulty scores.",
-        "image": data,
+        "image": haImage,
         "on_click": partial(switch_to, "pages/Hardest_Activities.py"),
         "key": "hardest_activities_card"
     },
     {
-        "title": "1st Placeholder",
-        "text": "Placeholder description for another Strava-based analysis.",
-        "image": data,
-        "on_click": partial(switch_to, "pages/Placeholder1.py"),
-        "key": "1st_placeholder"
+        "title": "Grind Graph",
+        "text": "A summary of my hardest cumulative weeks of training.",
+        "image": ggImage,
+        "on_click": partial(switch_to, "pages/Grind_Graph.py"),
+        "key": "grind_graph_card"
     },
     {
         "title": "Sky Log",
         "text": "A summary of my highest altitude activities.",
-        "image": data2,
+        "image": slImage,
         "on_click": partial(switch_to, "pages/Sky_Log.py"),
-        "key": "2nd_placeholder"
+        "key": "sky_log_card"
     }
 ]
 
