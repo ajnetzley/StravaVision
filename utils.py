@@ -22,6 +22,7 @@ from pandas.api.types import (
     is_numeric_dtype,
     is_object_dtype,
 )
+import base64
 
 from stravalib import Client
 
@@ -250,6 +251,30 @@ def refresh_data_pipeline():
         print(f"Error in data refresh pipeline: {str(e)}")
         return False
 
+def load_and_encode_image(image_path: str) -> str:
+    """
+    Loads an image from the specified path and encodes it in base64 format for use in Streamlit.
+
+    Args:
+        image_path (str): Path to the image file.
+
+    Returns:
+        str: Base64 encoded string of the image.
+    """
+    with open(image_path, "rb") as f:
+        image = f.read()
+        encoded = base64.b64encode(image)
+    image = "data:image/png;base64," + encoded.decode("utf-8")
+    return image
+
+def switch_to(path: str):
+    """
+    Switches to a different page in the Streamlit app.
+
+    Args:
+        path (str): The path of the page to switch to.
+    """
+    st.switch_page(path)
 #############################
 ### Hardest_Activities.py ###
 #############################
