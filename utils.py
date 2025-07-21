@@ -137,7 +137,7 @@ def refresh_data_pipeline():
         }]
         
         # Hardcoded adjustments for activities with mixed types
-        activities_distance_divisors = {
+        activities_distance_scalar = {
             "Ride": 4,
             "MountainBikeRide": 2.5,
             "GravelRide": 3,
@@ -147,14 +147,14 @@ def refresh_data_pipeline():
             "Hike": (4/3)
         }
 
-        activities_elevation_divisors = {
-            "Ride": 1,
-            "MountainBikeRide": 1,
-            "GravelRide": 1,
-            "Run": 1,
-            "TrailRun": 1,
-            "NordicSki": 1,
-            "Hike": (4/3)
+        activities_elevation_scalar = {
+            "Ride": 2,
+            "MountainBikeRide": 2,
+            "GravelRide": 2,
+            "Run": 2,
+            "TrailRun": 2,
+            "NordicSki": 2,
+            "Hike": 2
         }
 
         partial_trail_run_adjustment = {
@@ -166,7 +166,11 @@ def refresh_data_pipeline():
             "Trap Pass": 0.25,
             "Mailbox Peak": 0.5,
             "Goat Lake": 0.75,
-            "Green Mountain": 0.75
+            "Green Mountain": 0.75,
+            "Granite Lake": 0.5,
+            "Earl + Bean + Devil’s Head": 0.25,
+            "Olallie & Talapus Lakes": 0.5,
+            "Black Peak": 0.25,
         }
 
         def update_ptra(partial_trail_run_adjustment):
@@ -223,17 +227,24 @@ def refresh_data_pipeline():
         # Calculate the city, state, and country from the start_latlng
         filtered_activities["location_city"], filtered_activities["location_state"], filtered_activities["location_country"] = zip(*filtered_activities["start_latlng"].apply(extract_location))
 
-        filtered_activities["distance_score"] = (df["distance"]*0.000621371)/ df["sport_type"].map(lambda x: activities_distance_divisors.get(x, 1))
+        # Calculate the distance score (miles, adjusted for sport type. There is also custom adjustments for partial gravel rides and trail runs
+        filtered_activities["distance_score"] = (df["distance"]*0.000621371)/ df["sport_type"].map(lambda x: activities_distance_scalar.get(x, 1))
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_gravel_ride_adjustment.get(x, 1))).round(2)
+        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: updated_partial_trail_run_adjustment.get(x, 1))).round(2)
 
-        filtered_activities["elevation_score"] = (df["total_elevation_gain"]*3*3.28084*0.001)/ df["sport_type"].map(lambda x: activities_elevation_divisors.get(x, 1))
-        filtered_activities["difficulty_score"] = filtered_activities["distance_score"] + filtered_activities["elevation_score"]
-        filtered_activities["difficulty_score_without_elevation"] = (filtered_activities["difficulty_score"]*df["name"].map(lambda x: updated_partial_trail_run_adjustment.get(x, 1))).round(2)
+        # Calculate the elevation score (2x for cycling, 3x for everything else)
+        filtered_activities["elev_high"] = filtered_activities["elev_high"].fillna(0) #Temporary fix for missing elevation data
+        filtered_activities["elev_low"] = filtered_activities["elev_low"].fillna(0)
+        filtered_activities["total_elevation_gain"] = filtered_activities["total_elevation_gain"].fillna(0) #Temporary fix for missing elevation data
+        filtered_activities["elevation_score"] = (filtered_activities["total_elevation_gain"] * 3.28084 * 0.001) * filtered_activities["sport_type"].map(lambda x: activities_elevation_scalar.get(x, 1))
+        
+        # Calculate the combined difficulty score
+        filtered_activities["difficulty_score_without_altitude"] = filtered_activities["distance_score"] + filtered_activities["elevation_score"]
 
-        # Add adjustments for the average elevation of the activity
+        # Add adjustments for the average elevation of the activity (altitude performance capacity)
         filtered_activities["average_elevation"] = (((filtered_activities["elev_high"] + filtered_activities["elev_low"])/2)*3.28084).round(2)
         filtered_activities["performance_capacity"] = (filtered_activities["average_elevation"].round(-3)).map(elevation_to_capacity)
-        filtered_activities["difficulty_score"] = (filtered_activities["difficulty_score_without_elevation"] / filtered_activities["performance_capacity"]).round(2)
+        filtered_activities["difficulty_score"] = (filtered_activities["difficulty_score_without_altitude"] / filtered_activities["performance_capacity"]).round(2)
 
         # Convert raw distance, elevation, and date to readable formats
         filtered_activities["Distance (miles)"] = (filtered_activities["distance"]*0.000621371).round(2)
