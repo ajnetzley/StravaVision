@@ -71,14 +71,14 @@ card_metadata = [
     {
         "title": "Grind Graph",
         "text": "A summary of my hardest cumulative weeks of training.",
-        "image": load_and_encode_image("images/Grind_Graph.png"),
+        "image": load_and_encode_image("images/grind_graph.png"),
         "on_click": partial(switch_to, "pages/Grind_Graph.py"),
         "key": "grind_graph_card"
     },
     {
         "title": "Sky Log",
         "text": "A summary of my highest altitude activities.",
-        "image": load_and_encode_image("images/Sky_Log.png"),
+        "image": load_and_encode_image("images/sky_log.png"),
         "on_click": partial(switch_to, "pages/Sky_Log.py"),
         "key": "sky_log_card"
     }
