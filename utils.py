@@ -198,7 +198,7 @@ def refresh_data_pipeline():
             else:
                 dt = datetime.fromisoformat(timestamp)
             return dt.strftime("%m/%d/%y")
-
+    #https://journals.lww.com/acsm-msse/fulltext/1999/11000/comparing_cycling_world_hour_records,_1967_1996_.25.aspx
         elevation_to_capacity = {
             0: 1.0,
             1000: 0.992,
