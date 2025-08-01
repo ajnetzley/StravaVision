@@ -27,4 +27,4 @@ with col1:
     st.dataframe(filter_dataframe(df), use_container_width=True)
 
 with col2:
-    st.image("images/Grind_Graph.png", caption="Grind Graph Visualization", use_container_width=True)
+    st.image("images/grind_graph.png", caption="Grind Graph Visualization", use_container_width=True)

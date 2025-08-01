@@ -27,4 +27,4 @@ with col1:
     st.dataframe(filter_dataframe(df), use_container_width=True)
 
 with col2:
-    st.image("images/Sky_Log.png", caption="Sky Log Visualization", use_container_width=True)
+    st.image("images/sky_log.png", caption="Sky Log Visualization", use_container_width=True)
