@@ -8,3 +8,4 @@ client.secret
 /__pycache__
 /strava_api
 /pages/__pycache__
+/stravavenv

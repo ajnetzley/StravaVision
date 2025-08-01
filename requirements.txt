@@ -1,0 +1,8 @@
+numpy==1.24.4
+pandas==1.5.3
+python-dotenv==1.1.1
+Requests==2.32.4
+reverse_geocoder==1.5.1
+stravalib==2.3
+streamlit==1.45.1
+streamlit_card==1.0.2
