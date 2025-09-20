@@ -144,7 +144,7 @@ def refresh_data_pipeline():
             "Run": 1,
             "TrailRun": 1,
             "NordicSki": 1,
-            "Hike": (4/3)
+            "Hike": 1#(4/3)
         }
 
         activities_elevation_scalar = {
@@ -157,20 +157,44 @@ def refresh_data_pipeline():
             "Hike": 2
         }
 
+        partial_scramble_adjustment = { # Currently, 1 + (the percentage of mileage off trail rounded to nearest 0.1)
+            'Longs Peak & Mt. Meeker': 1.3,
+            "Andrew’s Glacier + Taylor + Hallett": 1.1,
+            'Black Peak': 1.2,
+            "Earl + Bean + Devil’s Head": 1.2,
+            "Mount Storm King": 1.1,
+            "Luahna Peak": 1.3
+        }
+
+        # Partial Backpacking adjustment ( currently, 1.10x the hike score for both distance and elevation) My pack is ~35lbs, vs ~15lb on a regular hike)
+        partial_backpacking_adjustment = {
+            "Red Deer Lake - Day 1": 1.1,
+            "Red Deer Lake - Day 2": 1.1,
+            "Strawberry Point - Day 1": 1.1,
+            "Strawberry Point - Day 2": 1.1,
+            "Hannegan Peak + Copper Creek - Day 1": 1.075, # Peak without backpack
+            "Copper Creek - Day 2": 1.1,
+            "Devil’s Dome - Day 1": 1.1,
+            "Devil’s Dome - Day 2": 1.1,
+            "Devil’s Dome - Day 3": 1.075, # Peak without backpack
+            "Devil’s Dome - Day 4": 1.1
+        }
+
         partial_trail_run_adjustment = {
-            "Mt. Teneriffe + Mt. Si": 0.25,
-            "Spray Park Loop": 0.5,
-            "Oyster Dome Loop": 0.75,
-            "Cutthroat Pass": 0.25,
-            "Trappers Peak / Thornton Lakes": 0.25,
-            "Trap Pass": 0.25,
-            "Mailbox Peak": 0.5,
-            "Goat Lake": 0.75,
-            "Green Mountain": 0.75,
-            "Granite Lake": 0.5,
-            "Earl + Bean + Devil’s Head": 0.25,
-            "Olallie & Talapus Lakes": 0.5,
-            "Black Peak": 0.25,
+            # "Mt. Teneriffe + Mt. Si": 0.25,
+            # "Spray Park Loop": 0.5,
+            # "Oyster Dome Loop": 0.75,
+            # "Cutthroat Pass": 0.25,
+            # "Trappers Peak / Thornton Lakes": 0.25,
+            # "Trap Pass": 0.25,
+            # "Mailbox Peak": 0.5,
+            # "Goat Lake": 0.75,
+            # "Green Mountain": 0.75,
+            # "Granite Lake": 0.5,
+            # "Earl + Bean + Devil’s Head": 0.25,
+            # "Olallie & Talapus Lakes": 0.5,
+            # "Black Peak": 0.25,
+            # "McClellan Butte": 0.5
         }
 
         def update_ptra(partial_trail_run_adjustment):
@@ -189,7 +213,10 @@ def refresh_data_pipeline():
         partial_gravel_ride_adjustment = {
              "BLOM / Island Lake": 2.5/(0.25*2.5 + 0.75*3),
              "Island Lake": 2.5/(0.25*2.5 + 0.75*3),
-             "Waterloo + DTE": 2.5/(0.25*2.5 + 0.75*3)
+             "Waterloo + DTE": 2.5/(0.25*2.5 + 0.75*3),
+             "Thrilla + North Lake Washington": 3/(0.5*3 + 0.5*4),
+             "Duvall + Marckworth Forest": 3/(0.5*3 + 0.5*4)
+
         }
 
         def convert_timestamp(timestamp):
@@ -231,13 +258,16 @@ def refresh_data_pipeline():
         filtered_activities["distance_score"] = (df["distance"]*0.000621371)/ df["sport_type"].map(lambda x: activities_distance_scalar.get(x, 1))
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_gravel_ride_adjustment.get(x, 1))).round(2)
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: updated_partial_trail_run_adjustment.get(x, 1))).round(2)
+        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_scramble_adjustment.get(x, 1))).round(2)
+        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
 
         # Calculate the elevation score (2x for cycling, 3x for everything else)
         filtered_activities["elev_high"] = filtered_activities["elev_high"].fillna(0) #Temporary fix for missing elevation data
         filtered_activities["elev_low"] = filtered_activities["elev_low"].fillna(0)
         filtered_activities["total_elevation_gain"] = filtered_activities["total_elevation_gain"].fillna(0) #Temporary fix for missing elevation data
         filtered_activities["elevation_score"] = (filtered_activities["total_elevation_gain"] * 3.28084 * 0.001) * filtered_activities["sport_type"].map(lambda x: activities_elevation_scalar.get(x, 1))
-        
+        filtered_activities["elevation_score"] = (filtered_activities["elevation_score"]*df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
+
         # Calculate the combined difficulty score
         filtered_activities["difficulty_score_without_altitude"] = filtered_activities["distance_score"] + filtered_activities["elevation_score"]
 
