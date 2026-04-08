@@ -1,824 +1,918 @@
 Activity Name,Date,Sport Type,Distance (miles),Total Elevation Gain (ft),Difficulty Score
-Luahna Peak,08/23/25,Hike,22.47,8963,49.94
-Trail Ridge Road,08/19/22,Ride,86.94,9675,49.08
-Longs Peak & Mt. Meeker,08/13/22,Hike,14.48,7469,43.28
-Cadillac's Greatest Hits,08/23/21,Ride,110.21,5928,39.73
-Onekama,08/11/20,Ride,113.61,4155,37.01
-Obliteride 2025!,08/09/25,Ride,101.02,5558,36.38
-Obliteride 2024,08/10/24,Ride,101.91,5329,36.14
-Grass Lake,06/12/21,GravelRide,85.29,3317,35.34
-Mt. Teneriffe + Mt. Si,11/26/23,Hike,17.29,7452,33.12
-Enchantments,08/17/24,Hike,20.84,5110,32.9
-Andrew’s Glacier + Taylor + Hallett,07/23/22,Hike,14.06,5314,32.26
-Spray Park Loop,08/31/24,TrailRun,18.45,5136,30.42
-Old Snowy + Knife’s Edge,08/25/24,Hike,17.43,4806,29.17
-Chinook Pass + Crystal,06/28/25,Ride,56.68,6437,28.2
-Black Peak,07/20/25,Hike,12.64,5110,27.99
-Pleasant Lake,08/14/21,GravelRide,66.79,2586,27.65
-Paradise + Stevens Canyon,09/23/24,Ride,57.33,5819,27.08
-Manton + Ina,07/28/20,Ride,75.49,3730,26.54
-Cascade Pass + Sahale Glacier,08/31/25,Hike,15.07,4706,26.41
-Devil’s Dome - Day 1,09/13/25,Hike,13.25,4852,26.33
-Nederland + Ward,07/03/22,Ride,53.61,5177,26.19
-Washington Pass,05/12/24,Ride,57.75,5223,25.95
-Luther + Harrietta ,07/12/20,Ride,73.97,3433,25.56
-Lake Ann + Chain of Lakes,09/01/25,Hike,16.49,3763,25.44
-Earl + Bean + Devil’s Head,06/29/25,Hike,11.54,4940,25.14
-Tatoosh Peak,08/16/25,Hike,13.77,4973,24.73
-Johnston’s + Harry’s Ridge,06/22/24,Hike,17.25,3227,24.71
-Devil’s Dome - Day 2,09/14/25,Hike,12.74,4039,24.7
-Manistee River Trail Loop,08/22/20,Hike,20.67,1911,24.69
-Cutthroat Pass,10/12/24,Hike,14.93,3285,23.19
-Oyster Dome Loop,11/03/24,TrailRun,15.12,3668,22.64
-Kendall Katwalk - PCT,10/01/23,Hike,15.31,3158,22.55
-BLOM / Island Lake,05/28/23,MountainBikeRide,52.37,1824,22.04
-Lyons + Loveland,06/19/22,Ride,62.34,2429,21.65
-Leelanau County,08/04/20,Ride,66.43,2375,21.53
-Island Lake,04/03/21,MountainBikeRide,50.84,1687,21.22
-Bristol + Tustin - CCC,07/16/20,Ride,61.11,2841,21.13
-Trappers Peak + Thornton Lake,09/18/24,Hike,11.66,4187,20.89
-Woodinville + Issaquah + MI,08/03/25,Ride,66.18,2110,20.76
-Cuyuna ,07/22/23,MountainBikeRide,40.73,2090,20.64
+Trail Ridge Road,08/19/22,Ride,86.94,9675,43.3
+Luahna Peak,08/23/25,Hike,22.47,8963,42.21
+Longs Peak & Mt. Meeker,08/13/22,Hike,14.48,7469,37.26
+Cadillac's Greatest Hits,08/23/21,Ride,110.21,5928,36.73
+Onekama,08/11/20,Ride,113.61,4155,34.91
+Grass Lake,06/12/21,GravelRide,85.29,3317,33.68
+Obliteride 2025!,08/09/25,Ride,101.02,5558,33.6
+Obliteride 2024,08/10/24,Ride,101.91,5329,33.47
+Mt. Teneriffe + Mt. Si,11/26/23,Hike,17.29,7452,29.78
+Spray Park Loop,08/31/24,TrailRun,18.45,5136,27.98
+Andrew’s Glacier + Taylor + Hallett,07/23/22,Hike,14.06,5314,27.49
+Enchantments,08/17/24,Hike,20.84,5110,27.38
+Carne High Route,10/18/25,Hike,15.33,5719,27.13
+Mount Daniel,09/27/25,Hike,15.71,5533,27.09
+Pleasant Lake,08/14/21,GravelRide,66.79,2586,26.35
+Black Peak,07/20/25,Hike,12.64,5110,24.85
+Chinook Pass + Crystal,06/28/25,Ride,56.68,6437,24.85
+Manton + Ina,07/28/20,Ride,75.49,3730,24.66
+Old Snowy + Knife’s Edge,08/25/24,Hike,17.43,4806,24.47
+P3 + Web + Defiance + Bandera,11/09/25,Hike,12.98,5830,24.24
+Paradise + Stevens Canyon,09/23/24,Ride,57.33,5819,24.05
+Luther + Harrietta ,07/12/20,Ride,73.97,3433,23.83
+Nederland + Ward,07/03/22,Ride,53.61,5177,23.34
+Washington Pass,05/12/24,Ride,57.75,5223,23.22
+Devil’s Dome - Day 1,09/13/25,Hike,13.25,4852,22.52
+Earl + Bean + Devil’s Head,06/29/25,Hike,11.54,4940,22.39
+Cascade Pass + Sahale Glacier,08/31/25,Hike,15.07,4706,22.34
+Oyster Dome Loop,11/03/24,TrailRun,15.12,3668,21.69
+Tatoosh Peak,08/16/25,Hike,13.77,4973,21.15
+BLOM / Island Lake,05/28/23,MountainBikeRide,52.37,1824,21.12
+Lake Ann + Chain of Lakes,09/01/25,Hike,16.49,3763,21.08
+Devil’s Dome - Day 2,09/14/25,Hike,12.74,4039,20.94
 20 w/ Soph,09/15/24,Run,20.15,138,20.59
-Hurricane Ridge,06/30/24,Ride,38.3,5156,20.46
-Thrilla + North Lake Washington,08/17/25,GravelRide,52.63,2589,20.22
-Hannegan Peak + Copper Creek - Day 1,07/27/24,Hike,11.1,3168,19.85
-Unadilla + Hell,11/09/20,Ride,62.03,2024,19.72
-,07/28/21,GravelRide,48.41,1581,19.46
-McClellan Butte,08/10/25,TrailRun,11.44,3728,19.44
-The Dragon,09/05/24,MountainBikeRide,40.17,1482,19.18
-Waterloop ,10/09/20,Ride,58.46,2195,19.15
-Waterloop,03/09/21,Ride,58.86,2047,18.95
-Harrietta + Hoxeyville,08/22/22,Ride,59.67,1935,18.94
-VASA,05/04/21,MountainBikeRide,38.9,1568,18.85
-Trap Pass,07/04/24,Hike,11.14,3274,18.74
-Chilly Hilly - Bainbridge Island,10/13/24,Ride,48.3,3320,18.72
-Devil’s Dome - Day 4,09/16/25,Hike,13.5,1596,18.68
-WPT - Reed City,06/07/20,Ride,64.24,1058,18.33
-Dighton + Lucas - CCC,08/20/20,Ride,49.51,2621,17.76
-Lake Minnetonka,06/18/23,Ride,52.59,2177,17.64
-Lefthand Canyon,06/22/22,Ride,34.15,3659,17.49
-Gunbarrel + Flagstaff Mountain,06/04/22,Ride,40.04,3024,17.32
-Yakima Canyon,09/17/24,Ride,52.69,1970,17.25
-Lake Sammamish + Zoo Climb,07/11/24,Ride,46.7,2706,17.22
-WPT - Ashton + Both Lakes,05/20/20,Ride,60.84,920,17.19
-Devil’s Dome - Day 3,09/15/25,Hike,11.92,1692,17.15
-Chasm Lake,08/07/22,Hike,9.04,2635,17.1
-Waterloo + DTE,05/19/21,MountainBikeRide,37.39,1957,17.05
-Hamburg,04/18/21,GravelRide,41.19,1581,17.03
-Cougar Mountain,09/26/23,Ride,40.57,3372,17.02
-Harrietta + Hoxeyville - CCC,06/25/20,Ride,52.09,1869,16.9
-Jamestown + Rowena,06/10/22,Ride,35.03,3454,16.9
-Hoxeyville + Harrietta,05/08/21,Ride,52.3,1837,16.89
-Manton - CCC,07/30/20,Ride,50.05,2114,16.88
-Hoxeyville + Harrietta,09/16/23,Ride,51.86,1817,16.72
-Granite Mountain,07/21/24,Hike,8.55,3729,16.69
-Lake Sammamish,10/05/24,Ride,49.2,2185,16.67
+Island Lake,04/03/21,MountainBikeRide,50.84,1687,20.37
+Lyons + Loveland,06/19/22,Ride,62.34,2429,20.36
+Leelanau County,08/04/20,Ride,66.43,2375,20.33
+Johnston’s + Harry’s Ridge,06/22/24,Hike,17.25,3227,20.22
+Cutthroat Pass,10/12/24,Hike,14.93,3285,20.17
+Woodinville + Issaquah + MI,08/03/25,Ride,66.18,2110,19.7
+Bristol + Tustin - CCC,07/16/20,Ride,61.11,2841,19.7
+Cuyuna ,07/22/23,MountainBikeRide,40.73,2090,19.58
+Manistee River Trail Loop,08/22/20,Hike,20.67,1911,19.48
+Unadilla + Hell,11/09/20,Ride,62.03,2024,18.7
+,07/28/21,GravelRide,48.41,1581,18.66
+Kendall Katwalk - PCT,10/01/23,Hike,15.31,3158,18.56
+The Dragon,09/05/24,MountainBikeRide,40.17,1482,18.44
+VASA,05/04/21,MountainBikeRide,38.9,1568,18.05
+Waterloop ,10/09/20,Ride,58.46,2195,18.04
+Seattle Loop,11/30/25,Run,16.12,932,17.98
+McClellan Butte,08/10/25,TrailRun,11.44,3728,17.97
+Harrietta + Hoxeyville,08/22/22,Ride,59.67,1935,17.96
+Waterloop,03/09/21,Ride,58.86,2047,17.92
+Thrilla + North Lake Washington,08/17/25,GravelRide,52.63,2589,17.91
+Trappers Peak + Thornton Lake,09/18/24,Hike,11.66,4187,17.85
+Hurricane Ridge,06/30/24,Ride,38.3,5156,17.81
+WPT - Reed City,06/07/20,Ride,64.24,1058,17.79
+Cougar Mountain,10/26/25,TrailRun,13.63,1976,17.72
+Camp Muir,12/13/25,BackcountrySki,8.65,4899,17.53
+Alta Mountain + Rampart Ridge,09/20/25,Hike,10.14,4020,17.24
+Chilly Hilly - Bainbridge Island,10/13/24,Ride,48.3,3320,17.06
+WPT - Ashton + Both Lakes,05/20/20,Ride,60.84,920,16.72
+Hannegan Peak + Copper Creek - Day 1,07/27/24,Hike,11.1,3168,16.68
 Chicago Lakefront Trail,08/21/23,Run,16.22,146,16.64
-Falmouth - CCC,08/13/20,Ride,50.14,1991,16.64
-Cascade Pass + Sahale Arm,07/12/25,Hike,10.38,2624,16.56
-Colchuck Lake,07/20/24,Hike,10.2,2676,16.47
-Harrietta + Hoxeyville,05/06/20,Ride,51.95,1651,16.42
-Mailbox Peak,05/26/24,TrailRun,7.99,3971,16.39
-Red Wing,08/11/23,GravelRide,32.26,2740,16.36
-Skyline Trail — MRNP,09/24/23,Hike,9.72,2683,16.28
-Cadillac Pathway,05/23/20,MountainBikeRide,28.55,2227,16.0
-Gothic Basin - Foggy Lake,10/29/23,Hike,9.55,2888,15.99
-Middle Fork,08/04/24,Ride,49.29,1757,15.96
-Jordan,07/16/23,Ride,50.62,1582,15.95
-Mount Baker,07/13/24,Ride,32.27,3700,15.92
-Vesper Peak,09/06/25,Hike,7.16,4016,15.84
-Wallace Lake,07/06/24,Hike,11.86,1927,15.84
-Lake Washington,08/08/24,Ride,48.72,1814,15.81
-Olga Lake,05/02/21,GravelRide,36.38,1756,15.77
-Arcadia Dunes,05/29/25,MountainBikeRide,26.35,2474,15.61
-Mercer Island + South Lake Washington,07/19/25,Ride,46.87,1932,15.58
-Mount Washington,03/09/24,Hike,8.82,3152,15.56
-Potawatomi,05/16/21,MountainBikeRide,27.03,2212,15.35
-Chelsea North,10/15/20,Ride,47.03,1726,15.33
-Chelsea North,07/24/21,Ride,47.44,1619,15.22
+Lake Minnetonka,06/18/23,Ride,52.59,2177,16.55
+Trap Pass,07/04/24,Hike,11.14,3274,16.54
+Dighton + Lucas - CCC,08/20/20,Ride,49.51,2621,16.44
+Snoqualmie Valley Trail,11/28/25,GravelRide,50.18,1893,16.35
+Yakima Canyon,09/17/24,Ride,52.69,1970,16.26
+Hamburg,04/18/21,GravelRide,41.19,1581,16.23
+Camano Island,12/06/25,Ride,43.64,3471,16.12
+Waterloo + DTE,05/19/21,MountainBikeRide,37.39,1957,16.07
+Hoxeyville + Harrietta,05/08/21,Ride,52.3,1837,15.97
+Harrietta + Hoxeyville - CCC,06/25/20,Ride,52.09,1869,15.95
+Lake Sammamish + Zoo Climb,07/11/24,Ride,46.7,2706,15.86
+Hoxeyville + Harrietta,09/16/23,Ride,51.86,1817,15.81
+Manton - CCC,07/30/20,Ride,50.05,2114,15.81
+Gunbarrel + Flagstaff Mountain,06/04/22,Ride,40.04,3024,15.7
+Falmouth - CCC,08/13/20,Ride,50.14,1991,15.65
+Harrietta + Hoxeyville,05/06/20,Ride,51.95,1651,15.59
+Lake Sammamish,10/05/24,Ride,49.2,2185,15.58
+Lefthand Canyon,06/22/22,Ride,34.15,3659,15.47
+Mailbox Peak,05/26/24,TrailRun,7.99,3971,15.36
+Cougar Mountain,09/26/23,Ride,40.57,3372,15.32
 Chicago Lakefront Path,06/14/25,Run,14.96,61,15.2
-Lake Sammamish + Zoo Climb,07/25/25,Ride,39.07,2628,15.15
-Tuesday Gravel Hills - AAVC,06/22/21,GravelRide,36.98,1295,15.04
-Twin Sisters,07/04/22,Hike,7.56,2449,14.89
-Lake Sammamish,07/24/24,Ride,43.08,2043,14.86
-McBain + Dighton ,05/13/20,Ride,43.61,1877,14.77
-Mercer Island Hot Lap,07/30/25,Ride,42.28,2037,14.64
-Lake Serene,11/05/23,Hike,9.12,2630,14.63
-The Divide,08/21/20,GravelRide,30.13,2170,14.5
-South Lake Washington + Mercer Island,07/16/24,Ride,44.01,1694,14.39
-Granite Lake,07/05/25,TrailRun,9.27,2405,14.32
-Both Lakes + WPT - Leroy,08/21/19,Ride,50.1,782,14.19
-Red Deer Lake - Day 1,07/09/22,Hike,7.41,1697,14.19
-Lucas + McBain - CCC,07/02/20,Ride,41.36,1821,14.09
-Chelsea,09/06/20,Ride,43.85,1509,14.09
-The Dragon,09/17/23,MountainBikeRide,29.44,1074,14.04
-Meauwataka - CCC,06/04/20,Ride,45.13,1314,14.02
-Goat Lake,06/16/24,TrailRun,10.42,1592,13.99
-Hamburg,09/17/20,Ride,43.29,1499,13.93
-Copper Creek - Day 2,07/28/24,Hike,8.01,2063,13.92
-Rocky Mountain National Park,06/02/22,Hike,8.52,1722,13.86
-Marshall Mesa,06/05/22,MountainBikeRide,24.01,1589,13.79
-Tuesday Gravel Hills - AAVC,06/08/21,GravelRide,34.06,1152,13.76
-Tuesday Gravel Hills - AAVC,05/25/21,GravelRide,33.93,1153,13.73
+Jordan,07/16/23,Ride,50.62,1582,15.15
+Middle Fork,08/04/24,Ride,49.29,1757,15.08
+Jamestown + Rowena,06/10/22,Ride,35.03,3454,15.04
+Red Wing,08/11/23,GravelRide,32.26,2740,14.98
+Lake Washington,08/08/24,Ride,48.72,1814,14.9
+Devil’s Dome - Day 4,09/16/25,Hike,13.5,1596,14.9
+Cadillac Pathway,05/23/20,MountainBikeRide,28.55,2227,14.88
+Olga Lake,05/02/21,GravelRide,36.38,1756,14.88
+Mercer Island + South Lake Washington,07/19/25,Ride,46.87,1932,14.62
+The Dragon,10/05/25,MountainBikeRide,31.09,1309,14.52
+Chelsea North,10/15/20,Ride,47.03,1726,14.47
+Granite Mountain,07/21/24,Hike,8.55,3729,14.46
+Chelsea North,07/24/21,Ride,47.44,1619,14.41
+Chasm Lake,08/07/22,Hike,9.04,2635,14.4
+Tuesday Gravel Hills - AAVC,06/22/21,GravelRide,36.98,1295,14.39
+Arcadia Dunes,05/29/25,MountainBikeRide,26.35,2474,14.36
+Potawatomi,05/16/21,MountainBikeRide,27.03,2212,14.24
+Mount Baker,07/13/24,Ride,32.27,3700,14.01
+Vesper Peak,09/06/25,Hike,7.16,4016,13.97
+Lake Sammamish,07/24/24,Ride,43.08,2043,13.83
+McBain + Dighton ,05/13/20,Ride,43.61,1877,13.83
+Devil’s Dome - Day 3,09/15/25,Hike,11.92,1692,13.82
+Lake Sammamish + Zoo Climb,07/25/25,Ride,39.07,2628,13.82
+Cascade Pass + Sahale Arm,07/12/25,Hike,10.38,2624,13.8
+Both Lakes + WPT - Leroy,08/21/19,Ride,50.1,782,13.8
+Colchuck Lake,07/20/24,Hike,10.2,2676,13.77
 Half Marathon with Jess,08/16/20,Run,13.35,136,13.73
-Hamburg,11/20/20,Ride,42.38,1501,13.71
-Olallie & Talapus Lakes,07/11/25,TrailRun,9.82,1743,13.69
-CONE-AZALIA,04/25/21,GravelRide,37.46,518,13.64
-Sunshine Canyon,07/24/22,Ride,25.86,3056,13.57
-TNR - Old Mission Peninsula,07/21/20,Ride,44.37,1179,13.56
-Olson Park,05/22/21,MountainBikeRide,27.25,1273,13.56
-Super Betasso,06/29/22,MountainBikeRide,21.17,2023,13.51
-Dirt Hammer,10/28/20,GravelRide,31.2,1473,13.46
-Switzerland Trail,07/21/22,GravelRide,23.11,1950,13.44
-Thursday Night Ride - AAVC,07/01/21,Ride,43.53,1225,13.44
-Duvall + Marckworth Forest,08/30/25,GravelRide,34.9,1703,13.38
-NCT Red Bridge - Marilla ,12/27/20,Hike,10.47,1324,13.23
-Dirt Hammer,09/09/20,GravelRide,30.9,1408,13.23
-Plymouth + Northville,09/11/20,Ride,41.85,1302,13.17
-Ann Arbor Local Loop,08/26/20,MountainBikeRide,24.1,1680,13.1
+Skyline Trail — MRNP,09/24/23,Hike,9.72,2683,13.66
+Mercer Island Hot Lap,07/30/25,Ride,42.28,2037,13.63
+South Lake Washington + Mercer Island,07/16/24,Ride,44.01,1694,13.54
+Palouse to Cascades Trail,11/01/25,GravelRide,38.15,1591,13.52
+The Dragon,09/17/23,MountainBikeRide,29.44,1074,13.5
+Gothic Basin - Foggy Lake,10/29/23,Hike,9.55,2888,13.49
+The Divide,08/21/20,GravelRide,30.13,2170,13.41
+CONE-AZALIA,04/25/21,GravelRide,37.46,518,13.38
+Meauwataka - CCC,06/04/20,Ride,45.13,1314,13.36
+Chelsea,09/06/20,Ride,43.85,1509,13.33
+Goat Lake,06/16/24,TrailRun,10.42,1592,13.32
+Mount Washington,03/09/24,Hike,8.82,3152,13.28
+Golden Gardens,12/07/25,Run,12.06,575,13.21
+Tuesday Gravel Hills - AAVC,06/08/21,GravelRide,34.06,1152,13.19
+Lucas + McBain - CCC,07/02/20,Ride,41.36,1821,13.18
+Hamburg,09/17/20,Ride,43.29,1499,13.18
+Tuesday Gravel Hills - AAVC,05/25/21,GravelRide,33.93,1153,13.15
+Granite Lake,07/05/25,TrailRun,9.27,2405,13.14
+Squak + Cougar,11/22/25,Ride,30.92,3522,13.11
 Gallup Park Pathway,11/04/20,Run,12.49,293,13.08
-NCT - Marilla + Red Bridge,08/03/20,MountainBikeRide,20.43,2391,13.05
 Chicago Lakefront Path,09/10/24,Run,12.72,112,13.04
-Snow Lake,11/07/24,Hike,8.35,2065,13.01
-Old Mission Peninsula,09/12/23,Ride,41.71,1189,12.91
-Maple Pass Loop,09/20/24,Hike,7.33,2266,12.79
-Dirt (Mud) Hammer,07/11/21,GravelRide,29.94,1349,12.78
-Chicago Lakefront Trail,08/22/23,Ride,48.19,306,12.76
-West Ann Arbor,07/20/21,GravelRide,31.67,1051,12.76
-Dirt Hammer,04/06/21,GravelRide,29.78,1334,12.7
-Durand,07/01/23,Ride,28.6,2717,12.68
-Dighton,05/31/25,Ride,36.01,1768,12.64
-Pictured Rocks,05/24/23,Hike,11.06,719,12.6
-The Dragon,11/28/20,MountainBikeRide,22.42,1725,12.52
-Thursday Night Ride - AAVC,06/03/21,Ride,40.58,1130,12.5
-Tuesday Gravel Hills - AAVC,06/01/21,GravelRide,31.03,984,12.41
-MSB,05/01/21,MountainBikeRide,23.38,1471,12.39
-Dighton,06/01/23,Ride,36.18,1597,12.34
-Thursday Night Ride - AAVC,06/10/21,Ride,41.03,964,12.29
-South San Juan Island,07/26/25,Ride,31.91,2152,12.28
+TNR - Old Mission Peninsula,07/21/20,Ride,44.37,1179,12.96
+Hamburg,11/20/20,Ride,42.38,1501,12.95
+Marshall Mesa,06/05/22,MountainBikeRide,24.01,1589,12.92
+Olson Park,05/22/21,MountainBikeRide,27.25,1273,12.91
+Wallace Lake,07/06/24,Hike,11.86,1927,12.85
+Thursday Night Ride - AAVC,07/01/21,Ride,43.53,1225,12.82
+Dirt Hammer,10/28/20,GravelRide,31.2,1473,12.71
+Table Mountain Circumnav,01/24/26,BackcountrySki,9.94,2938,12.64
+Twin Sisters,07/04/22,Hike,7.56,2449,12.63
+Chicago Lakefront Trail,08/22/23,Ride,48.19,306,12.61
+Dirt Hammer,09/09/20,GravelRide,30.9,1408,12.51
+Plymouth + Northville,09/11/20,Ride,41.85,1302,12.51
+Olallie & Talapus Lakes,07/11/25,TrailRun,9.82,1743,12.43
+Super Betasso,06/29/22,MountainBikeRide,21.17,2023,12.41
+North Lake Washington,09/21/25,Ride,39.35,1673,12.35
+Switzerland Trail,07/21/22,GravelRide,23.11,1950,12.32
+Old Mission Peninsula,09/12/23,Ride,41.71,1189,12.31
+Lake Serene,11/05/23,Hike,9.12,2630,12.31
+Ann Arbor Local Loop,08/26/20,MountainBikeRide,24.1,1680,12.26
 Cadillac Pathway ,01/02/21,NordicSki,10.48,836,12.25
-South Lake Washington,06/23/24,Ride,36.26,1587,12.24
-Escarpment Trail,05/22/23,Hike,8.57,1781,12.23
-Cadillac Pathway ,05/18/23,MountainBikeRide,23.24,1394,12.19
-Maple Grove,06/07/23,Ride,40.56,952,12.14
-Dighton,06/28/20,Ride,33.26,1858,12.14
-Thursday Night Ride - AAVC,08/12/21,Ride,40.41,971,12.14
-WPT - Ashton,05/16/23,Ride,42.33,732,12.14
-Olga Lake,05/31/23,GravelRide,28.4,1274,12.12
-Longs Peak Trailhead,08/17/22,Ride,20.48,2663,12.11
-Thursday Night Ride - AAVC ,06/17/21,Ride,39.94,1005,12.1
-Cherry Hill,04/12/21,GravelRide,28.92,1176,12.09
-Thursday Night Ride - AAVC,07/29/21,Ride,39.95,997,12.08
-Hamburg,05/26/23,Ride,37.3,1332,12.08
-Worden,05/28/21,GravelRide,30.22,927,12.02
-Arcadia Dunes,07/14/20,MountainBikeRide,19.76,1985,11.98
-South Kaibob Trial,12/13/23,Hike,7.03,2040,11.98
-Cadillac Pathway,05/11/20,MountainBikeRide,22.2,1484,11.95
+West Ann Arbor,07/20/21,GravelRide,31.67,1051,12.24
+Silver Fir Laps,03/29/26,BackcountrySki,8.59,3207,12.11
+Dirt (Mud) Hammer,07/11/21,GravelRide,29.94,1349,12.1
+Afternoon Ride,03/22/26,Ride,34.37,2297,12.03
+Dirt Hammer,04/06/21,GravelRide,29.78,1334,12.03
 Chicago Lakefront Path,06/18/25,Run,11.75,43,11.94
-Redmond + North Lake Washington,05/18/24,Ride,36.14,1439,11.92
-Dighton,05/03/21,Ride,31.37,1989,11.92
-Cadillac Pathway,06/08/20,MountainBikeRide,22.0,1496,11.89
-Annette Lake,10/15/23,Hike,7.53,1955,11.77
-VASA,05/29/20,MountainBikeRide,24.38,960,11.76
-DTE,06/15/21,MountainBikeRide,22.13,1384,11.71
+Thursday Night Ride - AAVC,06/03/21,Ride,40.58,1130,11.93
+Tuesday Gravel Hills - AAVC,06/01/21,GravelRide,31.03,984,11.92
+Sunshine Canyon,07/24/22,Ride,25.86,3056,11.92
+Duvall + Marckworth Forest,08/30/25,GravelRide,34.9,1703,11.86
+NCT - Marilla + Red Bridge,08/03/20,MountainBikeRide,20.43,2391,11.85
+Thursday Night Ride - AAVC,06/10/21,Ride,41.03,964,11.8
+North Lake Washington,03/01/26,Ride,39.36,1299,11.79
+North Lake Washington,11/02/25,Ride,36.38,1788,11.78
+Red Deer Lake - Day 1,07/09/22,Hike,7.41,1697,11.77
+WPT - Ashton,05/16/23,Ride,42.33,732,11.77
+Dighton,05/31/25,Ride,36.01,1768,11.74
 Charleston,04/21/25,Run,11.26,218,11.7
-Hamburg,03/25/21,Ride,35.95,1302,11.68
-Hamburg,06/19/21,Ride,36.27,1231,11.62
-Ann Arbor Local Loop,09/14/20,MountainBikeRide,21.47,1462,11.6
-Meauwataka,05/26/25,Ride,38.34,952,11.58
-DTE,04/27/21,MountainBikeRide,21.3,1404,11.42
-Olga Lake,05/19/22,GravelRide,26.29,1287,11.42
-Grand Rounds,06/04/23,Ride,37.37,986,11.4
-Meauwataka,04/24/20,Ride,38.28,861,11.38
-Mercer Island,10/21/23,Ride,31.62,1678,11.27
-Mount Storm King,10/20/24,Hike,5.82,2330,11.25
-DTE,07/14/21,MountainBikeRide,20.96,1385,11.24
-Theo Wirth,06/12/23,MountainBikeRide,22.03,1148,11.2
-Barton Hills,10/23/20,Ride,27.39,2122,11.18
-VASA,09/03/24,MountainBikeRide,21.6,1224,11.18
-Mercer Island,03/25/25,Ride,31.17,1685,11.16
-VASA,06/22/20,MountainBikeRide,22.33,1068,11.16
-County Line + Tustin,07/27/20,Ride,32.7,1417,11.09
+Maple Grove,06/07/23,Ride,40.56,952,11.66
+MSB,05/01/21,MountainBikeRide,23.38,1471,11.65
+The Dragon,11/28/20,MountainBikeRide,22.42,1725,11.65
+Thursday Night Ride - AAVC,08/12/21,Ride,40.41,971,11.65
+Copper Creek - Day 2,07/28/24,Hike,8.01,2063,11.63
+Thursday Night Ride - AAVC ,06/17/21,Ride,39.94,1005,11.59
+Thursday Night Ride - AAVC,07/29/21,Ride,39.95,997,11.58
+Worden,05/28/21,GravelRide,30.22,927,11.55
+Dighton,06/01/23,Ride,36.18,1597,11.54
+Cherry Hill,04/12/21,GravelRide,28.92,1176,11.49
+Cadillac Pathway ,05/18/23,MountainBikeRide,23.24,1394,11.48
+Olga Lake,05/31/23,GravelRide,28.4,1274,11.47
+South Lake Washington,06/23/24,Ride,36.26,1587,11.45
+Lake Stuart,11/15/25,Hike,9.62,1877,11.43
+Hamburg,05/26/23,Ride,37.3,1332,11.41
+Rocky Mountain National Park,06/02/22,Hike,8.52,1722,11.39
+Durand,07/01/23,Ride,28.6,2717,11.32
+Northville,12/20/25,Run,10.42,402,11.31
+VASA,05/29/20,MountainBikeRide,24.38,960,11.28
+South San Juan Island,07/26/25,Ride,31.91,2152,11.21
+Dighton,06/28/20,Ride,33.26,1858,11.2
+Cadillac Pathway,05/11/20,MountainBikeRide,22.2,1484,11.2
+Redmond + North Lake Washington,05/18/24,Ride,36.14,1439,11.2
+Chicago Lakefront Path,01/03/26,Run,10.8,130,11.15
+Chicago Lakefront Path,12/31/25,Run,10.83,109,11.14
+Cadillac Pathway,06/08/20,MountainBikeRide,22.0,1496,11.13
+Meauwataka,05/26/25,Ride,38.34,952,11.11
 Chicago Lakefront Path,06/23/25,Run,10.87,36,11.03
-Dighton,05/10/23,Ride,31.43,1535,11.02
+Hamburg,03/25/21,Ride,35.95,1302,11.03
+DTE,06/15/21,MountainBikeRide,22.13,1384,11.02
 Thursday Night Ride - AAVC,06/24/21,Ride,44.1,0,11.02
-Discovery + Downtown,09/07/25,Ride,30.71,1650,10.98
-Tustin,09/06/23,Ride,32.46,1387,10.98
-West Ann Arbor,09/10/22,GravelRide,26.66,994,10.97
-Whitmore Lake,04/13/21,Ride,34.02,1150,10.9
+Hamburg,06/19/21,Ride,36.27,1231,11.01
+Arcadia Dunes,07/14/20,MountainBikeRide,19.76,1985,10.98
+Meauwataka,04/24/20,Ride,38.28,861,10.95
+Grand Rounds,06/04/23,Ride,37.37,986,10.91
+Dighton,05/03/21,Ride,31.37,1989,10.91
+Ann Arbor Local Loop,09/14/20,MountainBikeRide,21.47,1462,10.87
 Ann Arbor Loop,09/07/21,Run,10.03,420,10.87
-Mercer Island,09/24/24,Ride,30.33,1644,10.87
-Mercer Island,07/31/24,Ride,30.59,1597,10.84
-Boon - CCC,05/06/21,Ride,37.58,678,10.84
-Discovery + Carkeek,08/15/25,Ride,25.79,2182,10.81
-Alki + Fauntleroy,06/21/24,Ride,33.59,1203,10.81
-Mercer Island,10/12/23,Ride,30.42,1598,10.8
-Mercer Island,05/02/24,Ride,29.89,1664,10.8
-Saline + Milan,09/27/20,Ride,33.76,1124,10.78
-Saint Paul,07/13/23,Ride,36.34,794,10.76
-Emery + Olson Park,03/22/21,MountainBikeRide,22.3,871,10.75
-Mercer Island,07/08/24,Ride,29.97,1623,10.74
-Mercer Island,10/19/23,Ride,29.86,1628,10.72
-County Line,07/31/20,GravelRide,23.28,1407,10.66
-Dighton,05/13/22,Ride,27.57,1837,10.65
-Potawatomi,08/17/21,MountainBikeRide,18.62,1554,10.65
-DTE,08/23/22,MountainBikeRide,18.89,1492,10.62
-Mercer Island,05/23/24,Ride,29.7,1580,10.58
-Meauwataka,09/14/23,Ride,34.19,944,10.52
-Meauwataka ,05/09/23,Ride,34.08,958,10.52
-Barton Hills,04/22/21,Ride,22.37,2421,10.51
-Meauwataka,05/24/22,Ride,34.11,952,10.51
-Tustin,05/10/22,GravelRide,22.98,1379,10.5
-North Lake Washington,08/26/25,Ride,31.84,1257,10.47
-North Lake Washington,07/29/25,Ride,31.69,1270,10.46
-Worden,10/13/20,GravelRide,25.93,870,10.46
-Dighton,05/25/20,Ride,27.61,1738,10.46
-Dexter,02/28/21,Ride,31.14,1288,10.44
-Cadillac Pathway,06/06/20,MountainBikeRide,18.32,1462,10.33
-Three Lakes,09/10/23,Ride,33.83,881,10.3
-Barton Hills,09/01/20,Ride,24.8,2010,10.3
-Cadillac Pathway,08/17/20,MountainBikeRide,18.22,1457,10.28
-Saint Paul,08/09/23,Ride,34.33,807,10.27
-Glacial Hills,06/24/20,MountainBikeRide,19.26,1234,10.25
-North Lake Washington,07/18/24,Ride,30.31,1300,10.18
-Garden of the Gods,05/28/22,Hike,7.53,944,10.16
-Burke-Gilman + Green Lake,07/16/25,Ride,35.32,650,10.13
-Canyonlands National Park,05/31/22,Hike,6.96,1210,10.12
-Deer Ridge Junction ,08/15/22,Ride,20.86,1865,10.1
-Pyrite Peak,12/14/23,Hike,7.48,1220,10.09
+Snow Lake,11/07/24,Hike,8.35,2065,10.84
+Denver!,01/30/26,Run,9.65,280,10.82
+Maple Pass Loop,09/20/24,Hike,7.33,2266,10.82
+Hyak Laps,02/15/26,BackcountrySki,6.91,3045,10.8
+Olga Lake,05/19/22,GravelRide,26.29,1287,10.78
+DTE,04/27/21,MountainBikeRide,21.3,1404,10.72
+VASA,06/22/20,MountainBikeRide,22.33,1068,10.61
+Theo Wirth,06/12/23,MountainBikeRide,22.03,1148,10.61
+NCT Red Bridge - Marilla ,12/27/20,Hike,10.47,1324,10.58
+VASA,09/03/24,MountainBikeRide,21.6,1224,10.56
+Longs Peak Trailhead,08/17/22,Ride,20.48,2663,10.56
+DTE,07/14/21,MountainBikeRide,20.96,1385,10.54
+Boon - CCC,05/06/21,Ride,37.58,678,10.49
+West Ann Arbor,09/10/22,GravelRide,26.66,994,10.46
+Mercer Island,10/21/23,Ride,31.62,1678,10.43
+County Line + Tustin,07/27/20,Ride,32.7,1417,10.38
+Saint Paul,07/13/23,Ride,36.34,794,10.35
+Mercer Island,03/25/25,Ride,31.17,1685,10.32
+Whitmore Lake,04/13/21,Ride,34.02,1150,10.31
+Emery + Olson Park,03/22/21,MountainBikeRide,22.3,871,10.31
+Evening Run,03/17/26,Run,8.01,1145,10.3
+Tustin,09/06/23,Ride,32.46,1387,10.28
+Dighton,05/10/23,Ride,31.43,1535,10.24
+Saline + Milan,09/27/20,Ride,33.76,1124,10.21
+Alki + Fauntleroy,06/21/24,Ride,33.59,1203,10.2
+Magnolia + Downtown,09/07/25,Ride,30.71,1650,10.16
+Downtown Seattle,11/13/25,Run,9.43,345,10.12
+Barton Hills,10/23/20,Ride,27.39,2122,10.11
+South Kaibob Trial,12/13/23,Hike,7.03,2040,10.09
 Lake Cadillac,08/10/20,Run,10.04,24,10.09
-Dighton,08/06/19,Ride,27.62,1543,10.08
-Dighton,04/06/20,Ride,27.7,1529,10.07
-WPT - Leroy,04/11/20,Ride,34.92,622,10.05
-Full Huron River Drive,12/03/20,Ride,30.35,1178,10.03
-Big M Challenge,07/25/20,MountainBikeRide,17.77,1413,10.02
-Alki Beach,08/01/25,Ride,31.72,1030,9.99
-Cadillac Pathway,06/19/20,MountainBikeRide,17.65,1427,9.99
-Afternoon Hike,05/11/25,Hike,7.97,958,9.97
-Dighton ,08/02/20,Ride,27.73,1482,9.97
-Middle Fork,07/17/25,Ride,30.63,1112,9.96
-Lake Minnetonka ,08/13/23,Ride,33.78,685,9.89
-Tustin,08/10/20,GravelRide,22.66,1115,9.86
-Ann Arbor Local Loop,04/10/21,MountainBikeRide,17.53,1379,9.85
-Ann Arbor Local Loop,09/02/20,MountainBikeRide,18.42,1192,9.83
-Heil Ranch,07/08/22,MountainBikeRide,14.95,1555,9.81
-Theo Wirth,06/26/23,MountainBikeRide,18.42,1182,9.81
-Big M,05/01/20,MountainBikeRide,17.93,1275,9.8
-Big M,05/16/20,MountainBikeRide,17.33,1379,9.77
-Flagstaff,06/30/22,Ride,15.83,2542,9.75
+Escarpment Trail,05/22/23,Hike,8.57,1781,10.07
+Mercer Island,09/24/24,Ride,30.33,1644,10.05
+Meauwataka,09/14/23,Ride,34.19,944,10.05
+Mercer Island,07/31/24,Ride,30.59,1597,10.05
+Meauwataka ,05/09/23,Ride,34.08,958,10.04
+Meauwataka,05/24/22,Ride,34.11,952,10.04
+Worden,10/13/20,GravelRide,25.93,870,10.03
+North Lake Washington,03/21/26,Ride,32.02,1339,10.01
+Mercer Island,10/12/23,Ride,30.42,1598,10.0
+Mercer Island,05/02/24,Ride,29.89,1664,9.97
+County Line,07/31/20,GravelRide,23.28,1407,9.95
+Mercer Island,07/08/24,Ride,29.97,1623,9.92
+Mercer Island,10/19/23,Ride,29.86,1628,9.9
+DTE,08/23/22,MountainBikeRide,18.89,1492,9.88
+Saint Paul,08/09/23,Ride,34.33,807,9.87
+Three Lakes,09/10/23,Ride,33.83,881,9.86
+Potawatomi,08/17/21,MountainBikeRide,18.62,1554,9.86
+Annette Lake,10/15/23,Hike,7.53,1955,9.84
+North Lake Washington,08/26/25,Ride,31.84,1257,9.84
+North Lake Washington,07/29/25,Ride,31.69,1270,9.82
+Tustin,05/10/22,GravelRide,22.98,1379,9.81
+Pictured Rocks,05/24/23,Hike,11.06,719,9.81
+Burke-Gilman + Green Lake,07/16/25,Ride,35.32,650,9.8
+Mercer Island,05/23/24,Ride,29.7,1580,9.79
+Dexter,02/28/21,Ride,31.14,1288,9.79
+Greenwood,11/24/25,Run,8.81,479,9.77
 Montrose Track,06/12/25,Run,9.63,22,9.75
-Dexter,04/08/21,Ride,30.68,996,9.74
-Pleasant Lake,05/13/21,GravelRide,23.11,980,9.74
-The Dragon ,05/20/23,MountainBikeRide,19.9,847,9.73
-North Lake Washington,09/30/23,Ride,29.9,1110,9.69
-Boon,05/02/20,Ride,34.26,503,9.66
+WPT - Leroy,04/11/20,Ride,34.92,622,9.74
+Dighton,05/13/22,Ride,27.57,1837,9.73
+Magnolia + Carkeek,08/15/25,Ride,25.79,2182,9.72
 Thursday Night Ride - AAVC,07/22/21,Ride,38.61,0,9.65
-Raging River,10/08/23,MountainBikeRide,12.13,2345,9.62
-Red Deer Lake - Day 2,07/10/22,Hike,7.21,37,9.57
-Mount Fremont Lookout,09/21/24,Hike,6.18,1240,9.55
-Gunbarrel,06/16/22,Ride,25.38,1327,9.53
-Cascade Rock — ONP,03/22/24,Hike,6.28,1587,9.53
-North Lake Washington,07/26/24,Ride,28.54,1183,9.5
+Glacial Hills,06/24/20,MountainBikeRide,19.26,1234,9.63
+Mount Storm King,10/20/24,Hike,5.82,2330,9.62
+Cadillac Pathway,06/06/20,MountainBikeRide,18.32,1462,9.6
+Dighton,05/25/20,Ride,27.61,1738,9.59
+Cadillac Pathway,08/17/20,MountainBikeRide,18.22,1457,9.56
+Lake Minnetonka ,08/13/23,Ride,33.78,685,9.55
+North Lake Washington,07/18/24,Ride,30.31,1300,9.53
 Lake Union,11/19/23,Run,8.86,322,9.5
-Tustin,11/29/20,GravelRide,20.59,1263,9.47
-Discovery + Ballard,08/22/25,Ride,28.39,1175,9.45
+Alki Beach,08/01/25,Ride,31.72,1030,9.48
+Bellevue,11/08/25,Ride,27.03,1791,9.45
+Full Huron River Drive,12/03/20,Ride,30.35,1178,9.44
 Chicago Lakefront Path,07/09/23,Run,9.34,42,9.42
-Glacial Hills,09/09/23,MountainBikeRide,16.26,1412,9.4
-Magnolia,09/12/25,Ride,24.75,1601,9.39
-Thursday Night Sprint Ride - AAVC ,07/15/21,Ride,30.11,869,9.34
-VASA ST,05/23/25,MountainBikeRide,20.61,506,9.32
-Starved Rock State Park,09/03/23,Hike,7.94,641,9.29
-North Lake Washington,10/06/23,Ride,27.4,1210,9.27
-North Lake Washington,05/27/24,Ride,27.5,1200,9.27
-Lookout Mountain,07/13/22,Ride,17.16,2061,9.27
-North Lake Washington,04/11/25,Ride,27.31,1200,9.23
-Lake 22,05/19/24,Hike,6.24,1403,9.21
+Middle Fork,07/17/25,Ride,30.63,1112,9.41
+Boon,05/02/20,Ride,34.26,503,9.4
+Big M Challenge,07/25/20,MountainBikeRide,17.77,1413,9.3
+The Dragon ,05/20/23,MountainBikeRide,19.9,847,9.3
+Tustin,08/10/20,GravelRide,22.66,1115,9.29
+Barton Hills,04/22/21,Ride,22.37,2421,9.29
+Dighton,08/06/19,Ride,27.62,1543,9.29
+Dighton,04/06/20,Ride,27.7,1529,9.29
+Barton Hills,09/01/20,Ride,24.8,2010,9.28
+Cadillac Pathway,06/19/20,MountainBikeRide,17.65,1427,9.27
+Pleasant Lake,05/13/21,GravelRide,23.11,980,9.24
+Dexter,04/08/21,Ride,30.68,996,9.23
+Ann Arbor Local Loop,09/02/20,MountainBikeRide,18.42,1192,9.23
+Dighton ,08/02/20,Ride,27.73,1482,9.22
 Ann Arbor Loop,10/18/20,Run,8.03,588,9.21
+Theo Wirth,06/26/23,MountainBikeRide,18.42,1182,9.21
 Boulder,08/11/22,Run,8.59,303,9.2
-North Lake Washington,06/19/24,Ride,27.16,1189,9.17
-Seward Park,09/09/25,Ride,27.45,1148,9.16
-Cadillac Pathway,04/17/20,MountainBikeRide,16.77,1181,9.14
-Dexter,08/26/21,Ride,28.45,978,9.14
-North Lake Washington,05/09/24,Ride,27.06,1182,9.12
-North Lake Washington,03/31/24,Ride,26.99,1184,9.12
-North Lake Washington,08/16/24,Ride,27.01,1181,9.11
-North Lake Washington,08/29/24,Ride,26.95,1184,9.11
-North Lake Washington,07/04/24,Ride,26.99,1181,9.11
+Big M,05/01/20,MountainBikeRide,17.93,1275,9.15
+Ann Arbor Local Loop,04/10/21,MountainBikeRide,17.53,1379,9.15
+North Lake Washington,09/30/23,Ride,29.9,1110,9.13
+Big M,05/16/20,MountainBikeRide,17.33,1379,9.07
 Lake Union,10/26/24,Run,8.54,264,9.07
-DTE,09/03/20,MountainBikeRide,17.33,1024,9.05
+VASA ST,05/23/25,MountainBikeRide,20.61,506,9.07
+Lake Union,11/16/25,Run,8.67,193,9.06
+Deer Ridge Junction ,08/15/22,Ride,20.86,1865,9.05
 Chicago Lakefront Path,06/14/24,Run,8.91,31,9.04
-Bellevue,08/30/24,Ride,23.31,1583,9.0
-Skyline Trail — MRNP,04/20/24,Hike,4.35,1992,8.99
-Flagstaff,08/03/22,Ride,14.24,2376,8.96
-Minnetonka,06/05/23,Ride,29.49,756,8.95
-Whitmore Lake,08/30/20,Ride,27.87,951,8.94
-Skyline Trail,07/13/24,Hike,4.81,1733,8.93
-DTE,05/02/22,MountainBikeRide,16.97,1033,8.93
+Heil Ranch,07/08/22,MountainBikeRide,14.95,1555,8.96
 Mackinaw Trail,04/28/20,Run,8.17,379,8.93
-Tustin,04/18/20,Ride,29.35,755,8.92
-Cadillac Pathway,04/28/25,MountainBikeRide,16.92,1035,8.91
-Emery,06/30/21,GravelRide,21.42,850,8.91
+North Lake Washington,07/26/24,Ride,28.54,1183,8.91
+Thursday Night Sprint Ride - AAVC ,07/15/21,Ride,30.11,869,8.9
 Ann Arbor Loop,10/01/20,Run,8.14,380,8.9
-Green Mountain,07/01/22,TrailRun,5.29,1482,8.9
 Lake Union,04/08/25,Run,8.33,275,8.88
-Dighton Fail - CCC,06/11/20,Ride,25.44,1222,8.87
-Barton Hills,12/04/20,Ride,18.4,2083,8.84
-Whitmore Lake ,12/11/20,Ride,28.63,788,8.81
-Emery,05/23/21,GravelRide,21.0,872,8.81
-Whitmore Lake,03/16/21,Ride,28.6,789,8.8
-1st & 2nd Flatirons,06/25/22,Hike,4.07,2021,8.75
-Tustin,05/15/20,Ride,26.07,1081,8.75
-Cadillac Pathway,05/26/20,MountainBikeRide,15.44,1245,8.74
-North Ann Arbor,03/11/21,GravelRide,21.24,781,8.71
+Magnolia + Ballard,08/22/25,Ride,28.39,1175,8.86
+Gunbarrel,06/16/22,Ride,25.38,1327,8.83
+Tustin,11/29/20,GravelRide,20.59,1263,8.83
+Evening Run,03/28/26,Run,7.01,903,8.82
+Queen Anne,11/05/25,Run,7.77,494,8.76
 Lake Union,08/28/24,Run,8.18,258,8.7
-Dexter,04/24/22,Ride,27.99,809,8.69
-Cadillac Pathway,05/21/22,MountainBikeRide,16.23,1036,8.63
+Glacial Hills,09/09/23,MountainBikeRide,16.26,1412,8.69
+North Lake Washington,05/27/24,Ride,27.5,1200,8.67
+North Lake Washington,10/06/23,Ride,27.4,1210,8.66
+Dexter,08/26/21,Ride,28.45,978,8.65
+North Lake Washington,04/11/25,Ride,27.31,1200,8.63
 Bde Maka Ska,06/09/23,Run,8.37,78,8.6
-Olson Park,09/25/19,MountainBikeRide,15.59,1117,8.54
-Cadillac Pathway,05/25/25,MountainBikeRide,16.19,994,8.54
-Arcadia Dunes,05/19/23,MountainBikeRide,15.39,1152,8.53
-Cadillac Pathway,04/25/25,MountainBikeRide,17.29,772,8.53
-Royal Arch,08/06/22,Hike,4.12,1897,8.53
-Arcadia Dunes,05/23/22,MountainBikeRide,14.84,1255,8.52
-NCT - Udell Hills,08/24/19,MountainBikeRide,15.12,1198,8.52
-Joy + Olson Park,12/09/20,MountainBikeRide,17.57,694,8.49
-Cadillac Pathway,05/22/25,MountainBikeRide,17.05,775,8.44
-Olson Park,05/12/21,MountainBikeRide,15.91,966,8.37
-Royal Arch,07/02/22,Hike,4.11,1824,8.37
-Greenway + River Rds,06/21/23,Ride,29.38,471,8.36
+Afternoon Run,03/22/26,Run,7.82,388,8.6
+Magnolia,09/12/25,Ride,24.75,1601,8.59
+Seward Park,09/09/25,Ride,27.45,1148,8.58
+Minnetonka,06/05/23,Ride,29.49,756,8.57
+North Lake Washington,06/19/24,Ride,27.16,1189,8.57
+Cadillac Pathway,04/17/20,MountainBikeRide,16.77,1181,8.55
+DTE,09/03/20,MountainBikeRide,17.33,1024,8.54
+Green Mountain,07/01/22,TrailRun,5.29,1482,8.54
+Tustin,04/18/20,Ride,29.35,755,8.54
+North Lake Washington,05/09/24,Ride,27.06,1182,8.53
+North Lake Washington,03/31/24,Ride,26.99,1184,8.53
+North Lake Washington,07/04/24,Ride,26.99,1181,8.52
+North Lake Washington,08/29/24,Ride,26.95,1184,8.52
+North Lake Washington,08/16/24,Ride,27.01,1181,8.52
+Emery,06/30/21,GravelRide,21.42,850,8.48
+Whitmore Lake,08/30/20,Ride,27.87,951,8.47
+Raging River,10/08/23,MountainBikeRide,12.13,2345,8.44
+Green Lake + Woodland Park,12/14/25,Run,7.17,633,8.44
+Whitmore Lake ,12/11/20,Ride,28.63,788,8.41
+DTE,05/02/22,MountainBikeRide,16.97,1033,8.41
+Whitmore Lake,03/16/21,Ride,28.6,789,8.4
+Cadillac Pathway,04/28/25,MountainBikeRide,16.92,1035,8.39
+Flagstaff,06/30/22,Ride,15.83,2542,8.38
+Emery,05/23/21,GravelRide,21.0,872,8.38
+Green Lake Track,02/18/26,Run,7.92,229,8.38
 Night Trail Run,07/12/22,TrailRun,6.35,991,8.33
+North Ann Arbor,03/11/21,GravelRide,21.24,781,8.32
 Lake Cadillac,05/24/22,Run,8.02,148,8.32
-Cherry Hill,08/10/21,GravelRide,19.43,873,8.3
-Olson Park,04/02/21,MountainBikeRide,15.17,1052,8.24
-DTE,05/27/23,MountainBikeRide,14.47,1182,8.22
+Afternoon Run,03/19/26,Run,7.54,383,8.31
+Dexter,04/24/22,Ride,27.99,809,8.28
+Dighton Fail - CCC,06/11/20,Ride,25.44,1222,8.26
+Canyonlands National Park,05/31/22,Hike,6.96,1210,8.24
+Tustin,05/15/20,Ride,26.07,1081,8.21
+Bellevue,08/30/24,Ride,23.31,1583,8.21
+Pyrite Peak,12/14/23,Hike,7.48,1220,8.19
 Lake Cadillac,04/21/20,Run,8.05,66,8.18
-Boon,05/31/20,Ride,28.22,525,8.17
-Cadillac Pathway,06/12/20,MountainBikeRide,14.03,1241,8.16
-Cadillac Pathway,09/13/23,MountainBikeRide,14.92,1043,8.12
-MCycling Intro Ride,09/11/21,Ride,24.51,961,8.11
+Novi,12/21/25,Run,7.65,217,8.15
+Cadillac Pathway,04/25/25,MountainBikeRide,17.29,772,8.15
+Joy + Olson Park,12/09/20,MountainBikeRide,17.57,694,8.14
+Lookout Mountain,07/13/22,Ride,17.16,2061,8.14
+Golden Gardens + Burke,02/13/26,Ride,24.58,1329,8.14
+Garden of the Gods,05/28/22,Hike,7.53,944,8.13
+Greenway + River Rds,06/21/23,Ride,29.38,471,8.12
+Cadillac Pathway,05/26/20,MountainBikeRide,15.44,1245,8.11
+Cadillac Pathway,05/21/22,MountainBikeRide,16.23,1036,8.1
 North Bund,05/04/25,Run,7.76,160,8.08
-Flagstaff,06/17/22,Ride,15.89,1759,8.08
-Cherry Hill,08/30/21,GravelRide,18.84,864,8.07
 Washington D.C.,06/02/24,Run,7.7,175,8.05
-Dexter,03/16/22,Ride,24.75,894,8.04
-Dexter,08/27/20,Ride,23.21,1080,8.02
-Strawberry Point - Day 2,06/30/24,Hike,5.77,760,8.02
-Arches National Park,05/30/22,Hike,5.45,1005,7.9
-Valmont Bike Park,06/26/22,MountainBikeRide,16.53,419,7.89
-Barton Hills,09/25/20,Ride,20.26,1375,7.87
+Cadillac Pathway,05/22/25,MountainBikeRide,17.05,775,8.04
+Cadillac Pathway,05/25/25,MountainBikeRide,16.19,994,8.03
+Olson Park,09/25/19,MountainBikeRide,15.59,1117,7.98
+Afternoon Hike,05/11/25,Hike,7.97,958,7.96
+Arcadia Dunes,05/19/23,MountainBikeRide,15.39,1152,7.95
+Cascade Rock — ONP,03/22/24,Hike,6.28,1587,7.94
+Mercer Island,10/22/25,Ride,24.3,1234,7.93
+NCT - Udell Hills,08/24/19,MountainBikeRide,15.12,1198,7.91
+Boon,05/31/20,Ride,28.22,525,7.9
+Olson Park,05/12/21,MountainBikeRide,15.91,966,7.88
+Arcadia Dunes,05/23/22,MountainBikeRide,14.84,1255,7.88
+Cherry Hill,08/10/21,GravelRide,19.43,873,7.85
+Mount Fremont Lookout,09/21/24,Hike,6.18,1240,7.85
 Minneapolis Sculpture Garden,06/28/23,Run,7.24,272,7.84
-Dexter,03/23/21,Ride,23.01,1008,7.83
+Afternoon Run,03/06/26,Run,7.08,364,7.81
+Skyline Trail — MRNP,04/20/24,Hike,4.35,1992,7.81
 Saint Paul,07/03/23,Ride,31.18,0,7.8
-Greenway + River Roads,07/20/23,Ride,27.39,443,7.8
-County Line + Lake Cadillac,04/01/20,Ride,23.58,914,7.78
+Barton Hills,12/04/20,Ride,18.4,2083,7.79
 Night Trail Run,06/23/22,TrailRun,6.2,791,7.78
-Olson Park,07/25/21,MountainBikeRide,14.52,950,7.77
-Dexter,02/02/21,Ride,23.81,868,7.75
-Strawberry Point - Day 1,06/29/24,Hike,6.04,500,7.74
-Dexter,09/22/20,Ride,24.35,781,7.71
-Morning Run,11/17/24,Run,7.4,140,7.68
-Cadillac Pathway,09/08/23,MountainBikeRide,15.08,786,7.66
+Summit West Laps,02/19/26,BackcountrySki,4.52,2302,7.78
+Summit West Laps,02/27/26,BackcountrySki,4.73,2236,7.75
+Olson Park,04/02/21,MountainBikeRide,15.17,1052,7.71
+Flagstaff,08/03/22,Ride,14.24,2376,7.68
+Green Lake,11/17/24,Run,7.4,140,7.68
+Valmont Bike Park,06/26/22,MountainBikeRide,16.53,419,7.67
+1st & 2nd Flatirons,06/25/22,Hike,4.07,2021,7.66
 University of Minnesota,06/16/23,Run,7.32,137,7.65
-West Ann Arbor,09/01/21,GravelRide,18.7,676,7.64
-Palmer Woods,05/27/25,MountainBikeRide,12.79,1219,7.62
-Chicago Lakefront Trail,09/01/23,Ride,27.84,279,7.58
+Skyline Trail,07/13/24,Hike,4.81,1733,7.64
+Cherry Hill,08/30/21,GravelRide,18.84,864,7.64
+Lake Union,10/25/25,Run,7.64,0,7.64
+MCycling Intro Ride,09/11/21,Ride,24.51,961,7.63
+DTE,05/27/23,MountainBikeRide,14.47,1182,7.62
+Lake 22,05/19/24,Hike,6.24,1403,7.62
+Dexter,03/16/22,Ride,24.75,894,7.59
+Cadillac Pathway,09/13/23,MountainBikeRide,14.92,1043,7.59
+Greenway + River Roads,07/20/23,Ride,27.39,443,7.57
 Chicago Lakefront Path,09/12/24,Run,7.44,32,7.56
-Dirty Harry's Balcony,11/24/23,Hike,4.65,1383,7.55
-Dixboro,03/30/21,Ride,22.04,984,7.54
-Olson Park,11/19/20,MountainBikeRide,14.62,811,7.53
-Dexter,03/26/23,Ride,23.68,768,7.52
+Green Lake Track,10/29/25,Run,7.28,131,7.54
+Cadillac Pathway,06/12/20,MountainBikeRide,14.03,1241,7.53
+Dexter,08/27/20,Ride,23.21,1080,7.48
 Novi,12/31/24,Run,7.05,183,7.48
+Chicago Lakefront Trail,09/01/23,Ride,27.84,279,7.44
+Lake Cadillac,10/06/25,Run,7.29,40,7.43
 Yoyogi Park,05/13/25,Run,7.05,189,7.43
-Seven Hills,06/18/22,GravelRide,13.43,1204,7.43
-Valmont,07/30/22,Ride,19.44,1005,7.41
-Cadillac Pathway,09/04/24,MountainBikeRide,14.57,761,7.41
-Dexter,12/15/21,Ride,23.15,757,7.36
+Royal Arch,08/06/22,Hike,4.12,1897,7.42
 Lake Cadillac,05/30/25,Run,7.21,43,7.36
-DTE,04/17/21,MountainBikeRide,12.74,1088,7.34
-Thursday Night Sprint Ride - AAVC ,08/19/21,Ride,24.47,573,7.33
+Lake Union,11/07/25,Run,7.05,143,7.34
 American Camp — SJI,07/27/25,TrailRun,6.16,585,7.33
-Dexter,08/25/22,Ride,22.99,745,7.3
-DTE,08/29/20,MountainBikeRide,13.37,922,7.25
-Rattlesnake Ledge,11/04/23,Hike,4.8,1186,7.23
+County Line + Lake Cadillac,04/01/20,Ride,23.58,914,7.32
+Dexter,09/22/20,Ride,24.35,781,7.32
+Dexter,03/23/21,Ride,23.01,1008,7.32
+Dexter,02/02/21,Ride,23.81,868,7.31
+Starved Rock State Park,09/03/23,Hike,7.94,641,7.3
+Olson Park,07/25/21,MountainBikeRide,14.52,950,7.3
+West Ann Arbor,09/01/21,GravelRide,18.7,676,7.3
+Cadillac Pathway,09/08/23,MountainBikeRide,15.08,786,7.27
+Royal Arch,07/02/22,Hike,4.11,1824,7.26
 Chicago Lakefront Path,05/02/25,Run,7.11,29,7.23
 Lake Cadillac,05/21/25,Run,7.08,36,7.21
-Afternoon Run,11/10/24,Run,6.46,369,7.2
+Red Deer Lake - Day 2,07/10/22,Hike,7.21,37,7.2
+Washington Arboretum,11/10/24,Run,6.46,369,7.2
 Lake Cadillac,09/06/24,Run,7.05,38,7.19
-Kirkland,08/07/25,Ride,21.53,902,7.18
-DTE,10/03/20,MountainBikeRide,13.21,892,7.13
+Barton Hills,09/25/20,Ride,20.26,1375,7.18
+Queen Anne,01/06/26,Run,6.02,568,7.16
+Olson Park,11/19/20,MountainBikeRide,14.62,811,7.13
+Dexter,03/26/23,Ride,23.68,768,7.13
+Flagstaff,06/17/22,Ride,15.89,1759,7.13
 Scio Church,09/08/24,Run,6.71,171,7.11
-Evening Run,09/05/25,Run,6.55,255,7.06
-Skyline Trail,08/03/24,Hike,4.32,1105,7.04
-Anemone Loop & Red Rocks,06/26/22,Hike,4.63,942,7.02
-Theo Wirth,07/31/23,MountainBikeRide,13.56,768,7.02
-Night Run,07/12/24,Run,6.54,217,6.97
-Bellevue,08/21/25,Ride,20.22,958,6.97
+U District,09/05/25,Run,6.55,255,7.06
+Dixboro,03/30/21,Ride,22.04,984,7.05
+U District,11/04/25,Run,6.38,333,7.05
+Thursday Night Sprint Ride - AAVC ,08/19/21,Ride,24.47,573,7.04
+Cadillac Pathway,09/04/24,MountainBikeRide,14.57,761,7.03
+Dirty Harry’s Balcony,03/28/26,TrailRun,4.1,1398,7.02
+Palmer Woods,05/27/25,MountainBikeRide,12.79,1219,7.01
+Dexter,12/15/21,Ride,23.15,757,6.99
+Green Lake,07/12/24,Run,6.54,217,6.97
 Mount Bohemia,01/13/21,NordicSki,5.4,746,6.95
-Valmont Bike Park,07/14/22,MountainBikeRide,13.93,459,6.88
-Golden Gardens + Green Lake,07/19/24,Ride,20.46,873,6.86
-Morning Run,09/22/24,Run,6.48,186,6.85
+Dexter,08/25/22,Ride,22.99,745,6.93
+Valmont,07/30/22,Ride,19.44,1005,6.87
+Green Lake,09/22/24,Run,6.48,186,6.85
+Evening Run,03/03/26,Run,6.4,218,6.84
 Lake Cadillac,09/18/23,Run,6.84,0,6.84
 Imperial Palace!,05/16/25,Run,6.36,226,6.81
-Singletrack/Bike Park,10/08/20,MountainBikeRide,12.5,876,6.8
-Dixboro,08/07/21,Ride,20.52,805,6.79
-Both Lakes,05/28/25,Ride,23.83,384,6.78
-Mack Trail Hill Laps ,05/30/20,Ride,17.44,1177,6.76
-Afternoon Run,12/07/24,Run,6.39,185,6.76
-Evening Run,10/07/24,Run,6.38,185,6.75
-DTE,09/18/20,MountainBikeRide,12.24,902,6.75
-Valmont Bike Park,07/09/22,MountainBikeRide,12.76,628,6.74
+Seven Hills,06/18/22,GravelRide,13.43,1204,6.79
+DTE,08/29/20,MountainBikeRide,13.37,922,6.78
+DTE,04/17/21,MountainBikeRide,12.74,1088,6.78
+Green Lake,12/07/24,Run,6.39,185,6.76
+Burke-Gilman,01/13/26,Run,6.3,224,6.75
+Green Lake,10/07/24,Run,6.38,185,6.75
+Kirkland,08/07/25,Ride,21.53,902,6.73
+Lake Cadillac,10/07/25,Run,6.58,39,6.71
 Chicago Lakefront Path,05/01/25,Run,6.57,47,6.71
-Evening Run,06/20/24,Run,6.3,188,6.68
-Evening Run,07/03/24,Run,6.17,245,6.66
-Morning Run,06/26/24,Run,6.28,192,6.66
-Olson Park,10/23/19,MountainBikeRide,13.34,619,6.63
-WPT - Tustin,06/02/20,Ride,21.86,554,6.62
+DTE,10/03/20,MountainBikeRide,13.21,892,6.68
+Green Lake,06/20/24,Run,6.3,188,6.68
+Green Lake,06/26/24,Run,6.28,192,6.66
+Lake Union,07/03/24,Run,6.17,245,6.66
+Valmont Bike Park,07/14/22,MountainBikeRide,13.93,459,6.63
+Green Lake Track,01/28/26,Run,6.08,274,6.63
+Theo Wirth,07/31/23,MountainBikeRide,13.56,768,6.62
+Novi,10/03/25,Run,6.31,130,6.62
+Both Lakes,05/28/25,Ride,23.83,384,6.59
 Cherry Creek Falls,03/24/25,TrailRun,5.18,704,6.59
-Cadillac Pathway,09/20/23,MountainBikeRide,12.22,824,6.59
-Afternoon Run,04/26/25,Run,6.43,46,6.57
-Emery,10/05/20,GravelRide,16.19,551,6.55
-WPT - Tustin,03/27/20,Ride,21.86,498,6.51
-WPT - Tustin,08/18/20,Ride,21.84,495,6.5
+Lake Cadillac,04/26/25,Run,6.43,46,6.57
+Lake Sammamish,10/19/25,Ride,21.95,702,6.54
+Morning Run,03/25/26,Run,6.05,228,6.51
 Night Run,12/08/19,Run,5.92,266,6.5
-Evening Run,04/11/25,Run,6.13,177,6.48
-DTE,10/22/20,MountainBikeRide,11.55,902,6.47
-VASA ST,08/26/19,MountainBikeRide,14.15,379,6.47
-Emery,03/08/21,GravelRide,16.21,504,6.46
-Thursday Night Ride - AAVC,07/08/21,Ride,21.03,574,6.46
-Both Lakes,06/23/20,Ride,22.55,379,6.45
-WPT - Tustin,05/08/22,Ride,21.68,487,6.44
-Evening Run,08/06/24,Run,6.11,162,6.43
-WPT - Tustin,08/16/19,Ride,21.73,474,6.43
+Bellevue,08/21/25,Ride,20.22,958,6.49
+Green Lake,04/11/25,Run,6.13,177,6.48
+Arches National Park,05/30/22,Hike,5.45,1005,6.46
 Night Run,08/15/24,Run,6.11,159,6.43
-Olson Park,09/07/20,MountainBikeRide,12.07,769,6.42
-Black Canyon of the Gunnison,05/29/22,Hike,3.23,1226,6.41
-North Table Mountain,08/12/22,MountainBikeRide,9.29,1103,6.4
+Green Lake,08/06/24,Run,6.11,162,6.43
+Golden Gardens + Green Lake,07/19/24,Ride,20.46,873,6.42
+Strawberry Point - Day 2,06/30/24,Hike,5.77,760,6.42
+U District,02/09/26,Run,5.49,459,6.41
+Valmont Bike Park,07/09/22,MountainBikeRide,12.76,628,6.4
+Dixboro,08/07/21,Ride,20.52,805,6.39
 Century Park + Pudong,05/07/25,Run,6.22,79,6.38
-Lake Mitchell + Benson,08/18/20,Ride,21.31,493,6.37
-Olson Park,09/24/20,MountainBikeRide,12.3,701,6.37
-South Minneapolis,06/16/23,Ride,21.83,414,6.34
-Snow Lake,10/07/23,Hike,6.33,0,6.33
-Olson Park,08/31/20,MountainBikeRide,12.19,675,6.27
+Dirty Harry's Balcony,11/24/23,Hike,4.65,1383,6.37
+Singletrack/Bike Park,10/08/20,MountainBikeRide,12.5,876,6.36
+WPT - Tustin,06/02/20,Ride,21.86,554,6.34
+Afternoon Run,03/11/26,Run,5.91,204,6.32
+Olson Park,10/23/19,MountainBikeRide,13.34,619,6.32
+DTE,09/18/20,MountainBikeRide,12.24,902,6.3
+VASA ST,08/26/19,MountainBikeRide,14.15,379,6.28
+Emery,10/05/20,GravelRide,16.19,551,6.28
+Both Lakes,06/23/20,Ride,22.55,379,6.26
+WPT - Tustin,03/27/20,Ride,21.86,498,6.26
 South Bund,05/05/25,Run,6.04,105,6.25
-Both Lakes,07/15/20,Ride,21.75,380,6.25
-Cadillac Pathway,05/12/22,MountainBikeRide,11.09,854,6.2
-Bellevue,04/14/25,Ride,17.66,892,6.2
-Baits Hill Laps,11/09/20,Ride,13.88,1337,6.19
-Cadillac Pathway,06/10/20,MountainBikeRide,11.13,844,6.19
-Cadillac Pathway,07/20/20,MountainBikeRide,11.08,849,6.18
-Bertram Lake Park,07/15/23,MountainBikeRide,12.76,515,6.18
-Kirkland,07/06/25,Ride,17.92,840,6.16
-Cadillac Pathway,07/22/19,MountainBikeRide,11.13,825,6.15
-Cadillac Pathway,07/26/19,MountainBikeRide,11.19,803,6.14
-Cadillac Pathway,07/16/19,MountainBikeRide,11.16,809,6.13
-Cadillac Pathway,06/29/20,MountainBikeRide,11.05,827,6.12
-Cadillac Pathway,07/29/20,MountainBikeRide,10.97,838,6.12
-Bellevue,04/06/25,Ride,17.33,895,6.12
-Cadillac Pathway,05/07/22,MountainBikeRide,10.99,838,6.12
-Colorado National Monument,05/30/22,Hike,4.43,677,6.12
-Cadillac Pathway,07/30/19,MountainBikeRide,11.15,799,6.11
+WPT - Tustin,08/18/20,Ride,21.84,495,6.25
+Wallingford,02/03/26,Run,5.23,506,6.24
+Uptown,01/04/26,Run,5.97,102,6.22
+Emery,03/08/21,GravelRide,16.21,504,6.21
+WPT - Tustin,05/08/22,Ride,21.68,487,6.2
+WPT - Tustin,08/16/19,Ride,21.73,474,6.19
+Bellevue,10/28/25,Ride,18.74,1004,6.19
+Cadillac Pathway,09/20/23,MountainBikeRide,12.22,824,6.18
+Thursday Night Ride - AAVC,07/08/21,Ride,21.03,574,6.17
+Mack Trail Hill Laps ,05/30/20,Ride,17.44,1177,6.17
+South Minneapolis,06/16/23,Ride,21.83,414,6.13
+Lake Mitchell + Benson,08/18/20,Ride,21.31,493,6.12
+Magnolia,10/24/25,Ride,18.07,1060,6.11
 Morning Run,06/04/24,Run,6.09,0,6.09
-Discovery Park,04/17/25,Ride,17.03,913,6.09
-Cadillac Pathway,11/24/21,MountainBikeRide,10.85,849,6.09
-Cadillac Pathway,07/23/20,MountainBikeRide,10.97,825,6.09
+Strawberry Point - Day 1,06/29/24,Hike,6.04,500,6.08
 Evening Ride,05/02/24,Run,5.63,227,6.08
-VASA ST,08/02/19,MountainBikeRide,13.12,385,6.07
-Cadillac Pathway,06/03/20,MountainBikeRide,11.24,760,6.07
-Cadillac Pathway,07/04/19,MountainBikeRide,11.07,790,6.06
-Cadillac Pathway,05/19/20,MountainBikeRide,10.91,827,6.06
-Cadillac Pathway,06/05/20,MountainBikeRide,10.85,828,6.05
-Cadillac Pathway,07/22/20,MountainBikeRide,10.92,816,6.05
-Cadillac Pathway,07/06/20,MountainBikeRide,10.89,814,6.04
-Cadillac Pathway,08/15/19,MountainBikeRide,11.02,788,6.04
+Both Lakes,07/15/20,Ride,21.75,380,6.06
 Shinjuku Garden + Japan National Stadium,05/14/25,Run,5.83,107,6.04
-Cadillac Pathway,06/27/20,MountainBikeRide,10.82,828,6.04
-Cadillac Pathway,08/08/20,MountainBikeRide,10.93,812,6.04
+Olson Park,09/07/20,MountainBikeRide,12.07,769,6.03
 Evergreen,01/09/21,NordicSki,5.37,304,6.03
-Burke-Gilman,07/13/25,Ride,20.71,427,6.03
 Afternoon Run,02/18/24,Run,5.45,284,6.02
-Burke-Gilman,02/27/25,Ride,21.22,355,6.02
-Cadillac Pathway,08/07/19,MountainBikeRide,10.9,800,6.01
-Cadillac Pathway,08/23/20,MountainBikeRide,10.73,834,6.01
-Lafayette,06/25/22,Ride,18.38,528,6.0
-Cadillac Pathway,04/05/20,MountainBikeRide,10.88,801,6.0
-Cadillac Pathway,04/03/20,MountainBikeRide,10.92,787,5.99
-Cadillac Pathway,07/13/20,MountainBikeRide,10.77,815,5.99
-Cadillac Pathway,05/15/23,MountainBikeRide,10.92,785,5.99
+Rattlesnake Ledge,11/04/23,Hike,4.8,1186,6.02
+Olson Park,09/24/20,MountainBikeRide,12.3,701,6.02
+DTE,10/22/20,MountainBikeRide,11.55,902,6.02
 Cadillac Pathway ,12/20/22,NordicSki,5.42,249,5.97
-Cadillac Pathway,05/08/23,MountainBikeRide,10.89,780,5.97
-Cadillac Pathway,07/14/19,MountainBikeRide,10.91,775,5.96
-Cadillac Pathway,08/11/19,MountainBikeRide,10.83,788,5.96
-Cadillac Pathway,04/08/20,MountainBikeRide,10.84,789,5.96
-Discovery Park,05/07/24,Ride,16.28,942,5.95
+Olson Park,08/31/20,MountainBikeRide,12.19,675,5.93
+Bertram Lake Park,07/15/23,MountainBikeRide,12.76,515,5.92
 Evening Run,09/06/25,Run,4.97,475,5.92
-Cadillac Pathway,05/05/21,MountainBikeRide,10.56,823,5.92
-Both Lakes,06/11/25,Ride,20.15,417,5.92
-Hobart,05/07/21,GravelRide,13.4,684,5.89
-Louisville,08/10/22,Ride,17.04,646,5.88
-Cadillac Pathway,08/03/19,MountainBikeRide,10.67,777,5.87
-Emery,06/07/21,GravelRide,14.5,496,5.87
-Delhi,11/07/21,Ride,17.27,747,5.86
-Around Ann Arbor,06/20/21,Ride,17.94,659,5.85
-Cadillac Pathway,05/03/20,MountainBikeRide,10.85,729,5.85
-Cadillac Pathway,05/09/20,MountainBikeRide,10.86,718,5.84
+VASA ST,08/02/19,MountainBikeRide,13.12,385,5.88
+Skyline Trail,08/03/24,Hike,4.32,1105,5.88
+Burke-Gilman,02/27/25,Ride,21.22,355,5.84
 Lunch Run,06/15/25,Run,5.74,19,5.83
-Cadillac Pathway,06/01/20,MountainBikeRide,10.88,714,5.83
-Cadillac Pathway,04/25/20,MountainBikeRide,10.86,717,5.83
-Cadillac Pathway,10/14/19,MountainBikeRide,10.65,757,5.82
-Eden Prairie,07/13/23,Ride,17.68,663,5.8
-Golden Gardens,04/02/24,Ride,18.22,616,5.78
-Both Lakes,07/08/20,Ride,20.38,319,5.78
-Theo + Minneapolis,08/14/23,Ride,17.88,622,5.76
-Whitmore Lake,10/01/20,Ride,17.31,689,5.76
-Both Lakes,08/07/20,Ride,20.27,320,5.76
-Whitmore Lake,07/17/21,Ride,17.52,659,5.75
-Both Lakes,06/21/20,Ride,20.18,322,5.73
-Dighton Finisher - CCC,06/11/20,Ride,15.08,948,5.72
-Both Lakes,04/02/20,Ride,19.92,333,5.7
-Both Lakes,03/23/20,Ride,19.98,327,5.7
-Superior,06/08/22,Ride,16.53,618,5.69
-Both Lakes,07/05/19,Ride,20.07,303,5.68
-Ypsilanti,09/08/20,Ride,17.4,618,5.64
+Burke-Gilman,07/13/25,Ride,20.71,427,5.82
+Fremont,12/03/25,Run,5.26,277,5.81
+North Table Mountain,08/12/22,MountainBikeRide,9.29,1103,5.79
+Anemone Loop & Red Rocks,06/26/22,Hike,4.63,942,5.78
+Cadillac Pathway,06/10/20,MountainBikeRide,11.13,844,5.77
+Cadillac Pathway,05/12/22,MountainBikeRide,11.09,854,5.77
+Bellevue,04/14/25,Ride,17.66,892,5.76
+Cadillac Pathway,07/20/20,MountainBikeRide,11.08,849,5.75
+Kirkland,07/06/25,Ride,17.92,840,5.74
+Both Lakes,06/11/25,Ride,20.15,417,5.72
+Cadillac Pathway,06/29/20,MountainBikeRide,11.05,827,5.71
+Lafayette,06/25/22,Ride,18.38,528,5.71
+Cadillac Pathway,07/29/20,MountainBikeRide,10.97,838,5.7
+Cadillac Pathway,05/07/22,MountainBikeRide,10.99,838,5.7
+Green Lake,09/23/25,Run,5.39,151,5.69
+Cadillac Pathway,06/03/20,MountainBikeRide,11.24,760,5.69
+Green Lake Track,11/27/25,Run,5.43,129,5.69
+Cadillac Pathway,07/23/20,MountainBikeRide,10.97,825,5.68
+Magnolia,10/15/25,Ride,15.91,1132,5.68
+Bellevue,04/06/25,Ride,17.33,895,5.67
+Cadillac Pathway,11/24/21,MountainBikeRide,10.85,849,5.66
+Cadillac Pathway,05/19/20,MountainBikeRide,10.91,827,5.65
+Cadillac Pathway,07/22/20,MountainBikeRide,10.92,816,5.64
+Cadillac Pathway,08/08/20,MountainBikeRide,10.93,812,5.64
+Cadillac Pathway,08/15/19,MountainBikeRide,11.02,788,5.64
+Discovery Park,04/17/25,Ride,17.03,913,5.63
+Cadillac Pathway,07/06/20,MountainBikeRide,10.89,814,5.62
+Cadillac Pathway,06/05/20,MountainBikeRide,10.85,828,5.62
+Cadillac Pathway,06/27/20,MountainBikeRide,10.82,828,5.61
 Morning Run,05/17/25,Run,5.39,109,5.61
-Both Lakes,05/21/20,Ride,20.0,281,5.6
-Both Lakes,11/26/20,Ride,20.14,262,5.6
-Both Lakes,06/14/20,Ride,19.96,276,5.58
-Golden Gardens,05/16/24,Ride,17.35,617,5.57
-Evening Run,09/10/25,Run,5.25,153,5.56
-Both Lakes,12/25/23,Ride,19.92,251,5.52
-Both Lakes,05/16/22,Ride,19.9,252,5.51
-Sleeping Bear Dunes,05/04/23,Hike,3.86,804,5.51
-Both Lakes,04/26/20,Ride,19.93,237,5.49
-Both Lakes,09/19/23,Ride,19.88,242,5.49
+Emery,06/07/21,GravelRide,14.5,496,5.61
+Both Lakes,07/08/20,Ride,20.38,319,5.61
+Cadillac Pathway,08/07/19,MountainBikeRide,10.9,800,5.6
+Cadillac Pathway,04/05/20,MountainBikeRide,10.88,801,5.59
+Cadillac Pathway,04/03/20,MountainBikeRide,10.92,787,5.59
+Both Lakes,08/07/20,Ride,20.27,320,5.59
+Cadillac Pathway,05/15/23,MountainBikeRide,10.92,785,5.59
+Cadillac Pathway,08/23/20,MountainBikeRide,10.73,834,5.58
+Cadillac Pathway,05/08/23,MountainBikeRide,10.89,780,5.57
+Cadillac Pathway,07/13/20,MountainBikeRide,10.77,815,5.57
+Green Lake,09/10/25,Run,5.25,153,5.56
+Both Lakes,06/21/20,Ride,20.18,322,5.56
+Cadillac Pathway,08/11/19,MountainBikeRide,10.83,788,5.55
+Cadillac Pathway,04/08/20,MountainBikeRide,10.84,789,5.55
+Louisville,08/10/22,Ride,17.04,646,5.54
+Hobart,05/07/21,GravelRide,13.4,684,5.54
+Both Lakes,10/06/25,Ride,19.86,354,5.53
+Both Lakes,03/23/20,Ride,19.98,327,5.53
+Both Lakes,04/02/20,Ride,19.92,333,5.52
+Baits Hill Laps,11/09/20,Ride,13.88,1337,5.51
+Around Ann Arbor,06/20/21,Ride,17.94,659,5.51
+Black Canyon of the Gunnison,05/29/22,Hike,3.23,1226,5.5
+Cadillac Pathway,05/05/21,MountainBikeRide,10.56,823,5.49
 Morning Run,03/20/24,Run,5.05,218,5.49
-Both Lakes ,05/05/20,Ride,19.96,215,5.46
-Golden Gardens,07/06/24,Ride,16.9,602,5.42
-Greenway,06/29/23,Ride,19.61,240,5.42
+Discovery Park,05/07/24,Ride,16.28,942,5.48
+Delhi,11/07/21,Ride,17.27,747,5.48
+Cadillac Pathway,05/09/20,MountainBikeRide,10.86,718,5.47
+Cadillac Pathway,04/25/20,MountainBikeRide,10.86,717,5.47
+Cadillac Pathway,08/03/19,MountainBikeRide,10.67,777,5.47
+Both Lakes,11/26/20,Ride,20.14,262,5.47
+Golden Gardens,04/02/24,Ride,18.22,616,5.47
+Cadillac Pathway,05/03/20,MountainBikeRide,10.85,729,5.47
+Cadillac Pathway,06/01/20,MountainBikeRide,10.88,714,5.46
+Both Lakes,05/21/20,Ride,20.0,281,5.46
+Eden Prairie,07/13/23,Ride,17.68,663,5.45
+Cadillac Pathway,10/14/19,MountainBikeRide,10.65,757,5.44
+Both Lakes,06/14/20,Ride,19.96,276,5.44
+Theo + Minneapolis,08/14/23,Ride,17.88,622,5.44
+Whitmore Lake,07/17/21,Ride,17.52,659,5.41
 Afternoon Run,03/19/25,Run,4.95,228,5.41
-County Line,07/05/20,Ride,15.95,692,5.41
-County Line,06/15/20,Ride,15.54,709,5.34
-WPT — County Line,04/27/25,Ride,15.5,701,5.31
-Olson Park,11/04/20,MountainBikeRide,10.45,531,5.28
-Lake Cadillac + Mack Trail Hill Laps ,07/09/20,Ride,15.53,680,5.28
-Chicago Lakefront Trail,08/30/23,Ride,19.56,163,5.26
-Greenway,07/26/23,Ride,19.03,226,5.25
-Greenway,08/02/23,Ride,19.0,225,5.24
-Cadillac Pathway,04/30/25,MountainBikeRide,10.69,442,5.2
+Both Lakes,12/25/23,Ride,19.92,251,5.4
+Whitmore Lake,10/01/20,Ride,17.31,689,5.4
+Green Lake Track,01/08/26,Run,5.05,176,5.4
+Morning Run,10/15/25,Run,5.1,152,5.4
+Both Lakes,05/16/22,Ride,19.9,252,5.39
+Both Lakes,04/26/20,Ride,19.93,237,5.38
+Both Lakes,09/19/23,Ride,19.88,242,5.37
+Superior,06/08/22,Ride,16.53,618,5.36
+Both Lakes ,05/05/20,Ride,19.96,215,5.35
+Ypsilanti,09/08/20,Ride,17.4,618,5.32
+Greenway,06/29/23,Ride,19.61,240,5.3
+Golden Gardens,05/16/24,Ride,17.35,617,5.27
+Dighton Finisher - CCC,06/11/20,Ride,15.08,948,5.23
+Crystal Uphill,01/11/26,BackcountrySki,3.18,1445,5.22
+Magnolia,02/04/26,Ride,14.9,1001,5.22
 Evening Run,11/03/24,Run,4.72,235,5.19
 Afternoon Run,04/06/25,Run,5.01,84,5.18
+Chicago Lakefront Trail,08/30/23,Ride,19.56,163,5.17
+Greenway,07/26/23,Ride,19.03,226,5.14
+Greenway,08/02/23,Ride,19.0,225,5.13
 Afternoon Run,10/16/24,Run,4.63,251,5.13
-Green Lake,09/19/24,Ride,18.94,184,5.1
-Green Lake,06/25/25,Ride,18.08,233,4.99
-Redmond,05/30/24,Ride,13.97,746,4.98
-Lake Mitchell,07/01/20,Ride,17.57,264,4.96
+Golden Gardens,07/06/24,Ride,16.9,602,5.12
+County Line,07/05/20,Ride,15.95,692,5.07
+Olson Park,11/04/20,MountainBikeRide,10.45,531,5.02
+Green Lake,09/19/24,Ride,18.94,184,5.01
+Cadillac Pathway,04/30/25,MountainBikeRide,10.69,442,4.98
+County Line,06/15/20,Ride,15.54,709,4.98
+WPT — County Line,04/27/25,Ride,15.5,701,4.96
 Mack Trail,12/30/21,NordicSki,4.89,10,4.95
+Colorado National Monument,05/30/22,Hike,4.43,677,4.95
+Lake Cadillac + Mack Trail Hill Laps ,07/09/20,Ride,15.53,680,4.94
 Evening Run,08/21/24,Run,4.56,177,4.91
-Whitmore Lake,02/03/21,Ride,14.75,571,4.87
-Icicle Gorge,09/28/24,Hike,4.24,240,4.86
-Both Lakes,09/28/19,Ride,16.91,280,4.83
-Lebanon Hills,07/04/23,MountainBikeRide,9.01,591,4.83
-Piestewa Peak,12/12/23,Hike,2.45,1135,4.8
+Green Lake,06/25/25,Ride,18.08,233,4.87
+Lake Mitchell,07/01/20,Ride,17.57,264,4.83
+Evening Run,11/01/25,Run,4.53,145,4.82
 Afternoon Run,11/26/19,Run,4.33,199,4.77
-Black Creek Nature Sanctuary,01/14/21,Hike,4.05,342,4.77
+Morning Run,03/09/26,Run,4.12,326,4.77
+Snow Lake,10/07/23,Hike,6.33,0,4.75
 Afternoon Run,09/26/24,Run,4.08,323,4.73
+Both Lakes,09/28/19,Ride,16.91,280,4.69
 Afternoon Run,04/29/25,Run,4.23,208,4.69
-Betasso Preserve,07/29/22,MountainBikeRide,6.76,806,4.65
+Morning Run,02/05/26,Run,4.02,319,4.66
+Redmond,05/30/24,Ride,13.97,746,4.61
 Evening Run,08/02/24,Run,4.46,73,4.61
 Morning Run,06/27/25,Run,4.3,146,4.59
-Old Spanish Trail - Grand Junction,05/30/22,Hike,3.63,344,4.58
-WPT - Overpass,07/24/19,Ride,14.32,458,4.54
+Whitmore Lake,02/03/21,Ride,14.75,571,4.59
+Sleeping Bear Dunes,05/04/23,Hike,3.86,804,4.54
+Lebanon Hills,07/04/23,MountainBikeRide,9.01,591,4.54
+Evening Run,02/28/26,Run,4.22,150,4.52
 Morning Run,04/19/25,Run,4.47,19,4.51
-Delhi,12/10/21,Ride,13.88,496,4.5
+Evening Run,10/17/25,Run,4.22,147,4.51
 Morning Run,06/17/25,Run,4.41,9,4.47
-Green Lake,08/03/24,Ride,16.18,199,4.44
+Evening Run,11/21/25,Run,4.08,184,4.45
 Cadillac Pathway ,12/25/22,NordicSki,4.11,129,4.41
-Green Lake,08/25/24,Ride,16.23,177,4.41
-Green Lake,08/13/24,Ride,16.21,177,4.4
-Gallup Park Pathway,03/27/21,Ride,12.83,533,4.31
+Morning Run,01/11/26,Run,3.75,319,4.39
+Morning Run,01/25/26,Run,3.6,383,4.37
+Lunch Run,01/30/26,Run,4.01,112,4.35
+Magnolia,01/14/26,Ride,13.06,719,4.34
+Green Lake,08/03/24,Ride,16.18,199,4.34
+Green Lake,08/25/24,Ride,16.23,177,4.33
+Green Lake,08/13/24,Ride,16.21,177,4.32
 Afternoon Run,05/24/25,Run,4.19,40,4.3
+Morning Run,10/20/25,Run,4.0,137,4.27
 Morning Run,10/09/23,Run,3.82,223,4.27
-Barton Hills,09/29/20,Ride,11.17,717,4.25
+Orienteering @ Magnuson Park,11/08/25,Run,4.27,0,4.27
+Delhi,12/10/21,Ride,13.88,496,4.24
+Betasso Preserve,07/29/22,MountainBikeRide,6.76,806,4.22
 Evening Run,07/17/24,Run,4.03,93,4.22
-Green Lake,07/23/25,Ride,14.81,246,4.19
+Evening Run,02/14/26,Run,3.86,168,4.2
 Evening Run,09/13/24,Run,4.12,20,4.19
-Cadillac Pathway,07/28/19,MountainBikeRide,7.3,608,4.17
+Piestewa Peak,12/12/23,Hike,2.45,1135,4.18
+Afternoon Run,12/24/25,Run,3.64,251,4.17
 May's Point,06/26/22,Run,2.77,502,4.16
-Burke-Gilman,07/04/25,Ride,14.27,289,4.15
 Morning Run,06/13/24,Run,4.08,19,4.15
-Cadillac Pathway,08/19/19,MountainBikeRide,7.19,608,4.13
-Rialto Beach — ONP,03/21/24,Hike,3.9,87,4.07
-Valmont,07/07/22,Ride,12.89,306,4.06
+Green Lake,07/23/25,Ride,14.81,246,4.07
+Evening Run,12/06/25,Run,3.35,361,4.07
+Gallup Park Pathway,03/27/21,Ride,12.83,533,4.04
+Morning Run,11/18/25,Run,3.74,139,4.02
+Burke-Gilman,07/04/25,Ride,14.27,289,4.0
 Afternoon Run,03/23/25,Run,3.46,242,3.94
 Evening Run,04/16/25,Run,3.63,149,3.93
+Barton Hills,09/29/20,Ride,11.17,717,3.9
+Valmont,07/07/22,Ride,12.89,306,3.9
 Evening Run,07/25/24,Run,3.7,76,3.85
+Evening Run,11/19/25,Run,3.42,200,3.82
+Cadillac Pathway,08/19/19,MountainBikeRide,7.19,608,3.82
+Morning Run,02/19/26,Run,3.09,365,3.82
 Cadillac Pathway,12/31/20,NordicSki,3.39,197,3.81
 Afternoon Run,12/30/24,Run,3.64,63,3.8
-Olson Park,09/12/19,MountainBikeRide,6.99,469,3.77
-WPT - Overpass,03/19/20,Ride,11.57,421,3.76
-WPT - Overpass,07/02/19,Ride,12.23,335,3.76
+Afternoon Run,12/16/25,Run,3.28,251,3.78
+Icicle Gorge,09/28/24,Hike,4.24,240,3.77
+Black Creek Nature Sanctuary,01/14/21,Hike,4.05,342,3.75
 Evening Run,08/20/24,Run,3.29,219,3.73
-Burke-Gilman,11/12/23,Ride,11.58,416,3.73
-Family Ride,08/12/20,Ride,12.08,338,3.73
 Evening Run,06/28/24,Run,3.16,276,3.71
-Burke-Gilman + Green Lake,07/10/24,Ride,12.05,349,3.71
-WPT - Overpass,08/12/19,Ride,11.07,442,3.68
-Discovery Park,03/08/24,Hike,2.93,354,3.64
-Green Lake,08/22/24,Ride,12.99,177,3.6
+Evening Run,11/12/25,Run,3.45,99,3.65
+Old Spanish Trail - Grand Junction,05/30/22,Hike,3.63,344,3.62
+Evening Run,10/31/25,Run,3.39,94,3.58
 Evening Run,10/05/24,Run,3.35,116,3.58
-Golden Gardens,07/13/25,Ride,12.34,244,3.57
-Cadillac Pathway,08/28/19,MountainBikeRide,6.21,508,3.53
-Discovery Park,04/26/24,Hike,2.8,358,3.52
+Family Ride,08/12/20,Ride,12.08,338,3.56
+WPT - Overpass,03/19/20,Ride,11.57,421,3.55
+Olson Park,09/12/19,MountainBikeRide,6.99,469,3.53
+Burke-Gilman + Green Lake,07/10/24,Ride,12.05,349,3.53
+Green Lake,08/22/24,Ride,12.99,177,3.52
+Burke-Gilman,11/12/23,Ride,11.58,416,3.52
 Afternoon Run,05/28/25,Run,3.09,197,3.51
+WPT,10/07/25,Ride,10.97,476,3.48
 Afternoon Run,08/28/25,Run,3.19,138,3.47
+WPT - Overpass,08/12/19,Ride,11.07,442,3.46
+Morning Run,02/06/26,Run,3.14,158,3.46
+Golden Gardens,07/13/25,Ride,12.34,244,3.45
 Morning Run,09/04/25,Run,3.14,144,3.43
 Green Lake,07/30/25,Run,3.39,19,3.43
 Afternoon Run,12/16/19,Run,3.01,175,3.39
-Rifle Falls State Park,06/01/22,Hike,2.48,297,3.38
 Night Run,12/10/19,Run,3.19,81,3.38
+Morning Run,01/07/26,Run,2.88,229,3.34
 Heritage Trail,12/25/24,NordicSki,3.3,0,3.33
 Evening Run,06/17/25,Run,3.25,21,3.32
 ASME/SWE Fun Run 5k,10/20/20,Run,3.1,90,3.31
 Evening Run,11/24/24,Run,2.92,193,3.31
+Heartbreak Shakeout,10/11/25,Run,3.22,23,3.3
+Morning Run,01/09/26,Run,2.85,225,3.3
 Morning Run,09/09/24,Run,3.19,30,3.28
-Cadillac Pathway,04/30/21,MountainBikeRide,5.51,500,3.23
-Cadillac Pathway,07/31/19,MountainBikeRide,5.52,491,3.22
-Lake Cadillac ,08/02/20,Ride,10.73,249,3.21
-Lake Cadillac,04/16/20,Ride,10.31,294,3.2
+Cadillac Pathway,08/28/19,MountainBikeRide,6.21,508,3.27
+Afternoon Run,01/02/26,Run,3.12,37,3.22
+Lunch Run,10/12/25,Run,3.16,8,3.21
+Morning Run,12/11/25,Run,3.19,0,3.19
 Heritage Trail,12/24/24,NordicSki,3.13,0,3.16
 Morning Run,06/19/25,Run,3.08,18,3.15
-Lake Cadillac,04/30/25,Ride,10.93,194,3.15
 Lunch Run,09/07/25,Run,3.06,42,3.14
-Lake Cadillac,07/07/19,Ride,10.61,230,3.14
 Afternoon Run,12/05/19,Run,2.85,128,3.14
 Evening Run,06/07/24,Run,3.03,33,3.12
-Lake Cadillac,05/12/20,Ride,10.81,194,3.11
-Cadillac Pathway,08/08/20,MountainBikeRide,5.27,478,3.09
-Cadillac Pathway,11/27/20,MountainBikeRide,5.35,461,3.08
-Lake Cadillac ,07/21/19,Ride,10.47,213,3.07
-Gallup Park Pathway,01/28/21,Ride,10.18,251,3.06
-Lake Cadillac,07/26/20,Ride,10.3,226,3.04
-Olson Park,09/12/19,MountainBikeRide,6.05,287,3.01
-Lake Cadillac,03/26/20,Ride,10.18,221,3.01
-Lake Cadillac,12/22/19,Ride,10.14,224,3.01
-Lake Cadillac,07/18/20,Ride,10.28,198,2.99
-Lake Cadillac,08/08/19,Ride,10.11,220,2.99
-Heritage Trail,12/23/24,Hike,2.91,25,2.98
-Commute,10/07/23,Ride,7.86,503,2.98
-Lake Cadillac,07/29/19,Ride,10.15,205,2.97
-Lake Cadillac,03/16/20,Ride,10.09,216,2.97
-Lake Cadillac,12/26/19,Ride,10.12,200,2.95
+Rialto Beach — ONP,03/21/24,Hike,3.9,87,3.1
+Lake Cadillac ,08/02/20,Ride,10.73,249,3.07
+Lake Cadillac,04/16/20,Ride,10.31,294,3.04
+Lake Cadillac,04/30/25,Ride,10.93,194,3.04
+Lake Cadillac,05/12/20,Ride,10.81,194,3.01
+Cadillac Pathway,04/30/21,MountainBikeRide,5.51,500,2.97
 Cadillac Pathway ,12/29/22,NordicSki,2.88,27,2.95
-Lake Cadillac,08/23/19,Ride,10.02,205,2.93
-Cedar Bend,10/10/19,MountainBikeRide,4.47,552,2.91
-Lake Cadillac,05/24/20,Ride,10.02,197,2.91
-Evening Hike,09/14/25,Hike,1.91,386,2.89
-Afternoon Hike,10/19/24,Hike,2.57,116,2.82
-Hoh Rainforest — ONP,03/21/24,Hike,2.53,112,2.77
-Marymere Falls — ONP,03/22/24,Hike,2.1,301,2.72
-Sullivan’s Island,08/25/23,Ride,10.06,42,2.59
-Afternoon Hike,05/22/25,Hike,2.48,20,2.54
-Commute,10/06/23,Ride,7.69,309,2.54
+Gallup Park Pathway,01/28/21,Ride,10.18,251,2.94
+Lake Cadillac,07/26/20,Ride,10.3,226,2.93
+Discovery Park,03/08/24,Hike,2.93,354,2.91
+Lake Cadillac,03/26/20,Ride,10.18,221,2.9
+Lake Cadillac,12/22/19,Ride,10.14,224,2.9
+Lake Cadillac,07/18/20,Ride,10.28,198,2.89
+Lake Cadillac,08/08/19,Ride,10.11,220,2.88
+Olson Park,09/12/19,MountainBikeRide,6.05,287,2.87
+Lake Cadillac,03/16/20,Ride,10.09,216,2.86
+Lake Cadillac,12/26/19,Ride,10.12,200,2.85
+Cadillac Pathway,08/08/20,MountainBikeRide,5.27,478,2.85
+Cadillac Pathway,11/27/20,MountainBikeRide,5.35,461,2.85
+Lake Cadillac,08/23/19,Ride,10.02,205,2.83
+Lake Cadillac,05/24/20,Ride,10.02,197,2.82
+Discovery Park,04/26/24,Hike,2.8,358,2.82
+Morning Run,12/17/25,Run,2.43,160,2.75
+Commute,10/07/23,Ride,7.86,503,2.72
+Rifle Falls State Park,06/01/22,Hike,2.48,297,2.7
+Cedar Bend,10/10/19,MountainBikeRide,4.47,552,2.64
+Sullivan’s Island,08/25/23,Ride,10.06,42,2.57
 Heritage Trail,12/24/22,NordicSki,2.44,19,2.5
-VASA ST w/ sis,05/29/20,MountainBikeRide,5.64,84,2.45
-Cedar Bend,10/04/19,MountainBikeRide,3.54,495,2.43
-Heritage Trail,12/25/21,Hike,2.35,20,2.41
+VASA ST w/ sis,05/29/20,MountainBikeRide,5.64,84,2.41
+Evening Hike,09/14/25,Hike,1.91,386,2.38
+Commute,10/06/23,Ride,7.69,309,2.38
 Evening Run,08/23/24,Run,2.09,145,2.38
 Afternoon Run,03/28/25,Run,2.06,118,2.3
 Evening Run,08/27/24,Run,2.12,85,2.29
 Afternoon Run,09/16/24,Run,2.21,16,2.26
+Heritage Trail,12/23/24,Hike,2.91,25,2.25
 Evening Run,07/20/24,Run,2.06,91,2.24
-Empire Bluff,05/27/25,Hike,1.83,197,2.24
 Evening Run,07/27/24,Run,2.01,111,2.23
-Afternoon Ride,08/13/25,Ride,4.96,486,2.21
-Family Ride,08/05/20,Ride,7.07,188,2.17
+Marymere Falls — ONP,03/22/24,Hike,2.1,301,2.2
+Cedar Bend,10/04/19,MountainBikeRide,3.54,495,2.18
+Afternoon Hike,10/19/24,Hike,2.57,116,2.17
 Gallup Park Pathway,08/15/21,Ride,8.55,0,2.14
 Afternoon Run,09/30/24,Run,2.01,64,2.14
-Ice Cream,05/16/20,Ride,6.92,176,2.1
-Gratiot Lake Overlook,01/14/21,Hike,1.19,429,2.07
-Barton Hills,11/06/20,Ride,5.41,298,1.97
+Hoh Rainforest — ONP,03/21/24,Hike,2.53,112,2.14
+Family Ride,08/05/20,Ride,7.07,188,2.07
+Ice Cream,05/16/20,Ride,6.92,176,2.01
+Afternoon Ride,08/13/25,Ride,4.96,486,1.97
 Afternoon Run,10/12/24,Run,1.84,58,1.96
+Afternoon Hike,05/22/25,Hike,2.48,20,1.92
 Afternoon Run,12/04/19,Run,1.47,176,1.83
-Pyramid Point,05/04/23,Hike,1.21,234,1.69
-Pyramid Point,05/27/25,Hike,1.2,224,1.66
-Mackinaw Trail,08/02/19,MountainBikeRide,3.1,185,1.62
+Barton Hills,11/06/20,Ride,5.41,298,1.81
+Heritage Trail,12/25/21,Hike,2.35,20,1.81
+Empire Bluff,05/27/25,Hike,1.83,197,1.78
+Gratiot Lake Overlook,01/14/21,Hike,1.19,429,1.76
 Evening Run,12/09/19,Run,1.45,48,1.56
+Mackinaw Trail,08/02/19,MountainBikeRide,3.1,185,1.53
 Afternoon Run,12/23/19,Run,1.49,0,1.5
-Commute,12/08/23,Ride,4.05,207,1.42
-Cadillac Pathway,04/27/25,MountainBikeRide,2.57,182,1.4
-Arcadia Dunes,12/26/23,Hike,1.18,83,1.36
-Commute,10/09/23,Ride,3.01,259,1.27
-Commute,10/11/23,Ride,2.89,261,1.24
-Commute,11/13/23,Ride,2.86,259,1.24
-Commute,10/18/23,Ride,2.87,258,1.24
-Commute,02/12/24,Ride,2.88,259,1.24
-Commute,10/27/23,Ride,2.83,258,1.23
-Commute,02/14/24,Ride,2.86,258,1.23
-Commute,11/15/23,Ride,2.82,258,1.23
-Commute,10/13/23,Ride,2.84,258,1.23
-Commute,10/20/23,Ride,2.83,258,1.23
-Commute,04/04/24,Ride,3.43,184,1.23
-Commute,11/20/23,Ride,2.85,258,1.23
-Commute,02/05/24,Ride,2.83,258,1.23
-Commute,10/30/23,Ride,2.84,259,1.23
-Commute,11/01/23,Ride,2.84,258,1.23
-Commute,11/17/23,Ride,2.85,259,1.23
-Commute,10/23/23,Ride,2.86,258,1.23
-Commute,11/08/23,Ride,2.84,259,1.23
-Commute,11/29/23,Ride,2.83,259,1.23
-Commute,10/16/23,Ride,2.84,258,1.23
-Commute,12/01/23,Ride,2.84,259,1.23
-Commute,12/11/23,Ride,2.82,259,1.22
-Commute,05/15/24,Ride,2.87,244,1.21
-Commute,11/27/23,Ride,2.84,249,1.21
-Commute,11/03/23,Ride,2.81,249,1.2
-Commute,08/10/24,Ride,3.08,189,1.15
-Commute,05/07/24,Ride,2.87,189,1.1
-Commute,05/02/24,Ride,3.39,125,1.1
-Commute,05/10/24,Ride,3.26,127,1.07
-Commute,05/09/24,Ride,3.18,134,1.06
-Commute,05/10/24,Ride,2.95,158,1.06
-Commute,05/09/24,Ride,3.28,104,1.03
-Commute,05/02/24,Ride,3.27,104,1.03
-Commute,10/09/23,Ride,3.26,79,0.98
-Commute,10/13/23,Ride,3.06,104,0.98
-Baits Downhill,09/16/19,MountainBikeRide,1.18,248,0.98
-Commute,11/29/23,Ride,3.06,103,0.97
-Commute,01/10/24,Ride,3.08,102,0.97
-Commute,11/27/23,Ride,3.05,104,0.97
-Commute,12/08/23,Ride,3.03,100,0.96
-Commute,10/25/23,Ride,2.47,168,0.96
-Commute,10/27/23,Ride,2.96,103,0.95
-Commute,10/18/23,Ride,2.96,104,0.95
-Commute,10/20/23,Ride,2.97,103,0.95
-Commute,10/16/23,Ride,3.01,100,0.95
+Pyramid Point,05/04/23,Hike,1.21,234,1.39
+Pyramid Point,05/27/25,Hike,1.2,224,1.36
+Afternoon Hike,12/27/25,Hike,1.73,17,1.34
+Commute,12/08/23,Ride,4.05,207,1.32
+Cadillac Pathway,04/27/25,MountainBikeRide,2.57,182,1.31
+Commute,04/04/24,Ride,3.43,184,1.14
+Commute,10/09/23,Ride,3.01,259,1.14
+Commute,02/12/24,Ride,2.88,259,1.11
+Commute,10/18/23,Ride,2.87,258,1.11
+Commute,11/13/23,Ride,2.86,259,1.11
+Commute,10/11/23,Ride,2.89,261,1.11
+Commute,11/08/23,Ride,2.84,259,1.1
+Commute,10/20/23,Ride,2.83,258,1.1
+Commute,10/16/23,Ride,2.84,258,1.1
+Commute,10/27/23,Ride,2.83,258,1.1
+Commute,11/17/23,Ride,2.85,259,1.1
+Commute,10/30/23,Ride,2.84,259,1.1
+Commute,11/20/23,Ride,2.85,258,1.1
+Commute,10/13/23,Ride,2.84,258,1.1
+Commute,11/29/23,Ride,2.83,259,1.1
+Commute,12/01/23,Ride,2.84,259,1.1
+Commute,11/15/23,Ride,2.82,258,1.1
+Commute,11/01/23,Ride,2.84,258,1.1
+Commute,10/23/23,Ride,2.86,258,1.1
+Commute,02/05/24,Ride,2.83,258,1.1
+Commute,02/14/24,Ride,2.86,258,1.1
+Commute,12/11/23,Ride,2.82,259,1.09
+Commute,05/15/24,Ride,2.87,244,1.09
+Commute,11/27/23,Ride,2.84,249,1.08
+Arcadia Dunes,12/26/23,Hike,1.18,83,1.07
+Commute,11/03/23,Ride,2.81,249,1.07
+Commute,08/10/24,Ride,3.08,189,1.05
+Commute,05/02/24,Ride,3.39,125,1.04
+Commute,05/10/24,Ride,3.26,127,1.01
+Commute,05/07/24,Ride,2.87,189,1.0
+Commute,05/09/24,Ride,3.18,134,0.99
+Commute,05/10/24,Ride,2.95,158,0.98
+Commute,05/09/24,Ride,3.28,104,0.98
+Commute,05/02/24,Ride,3.27,104,0.98
 Cross Country Ski,12/22/19,NordicSki,0.94,0,0.95
-Commute,10/25/23,Ride,2.94,103,0.95
-Commute,11/08/23,Ride,2.98,104,0.95
-Commute,12/11/23,Ride,3.06,93,0.95
-Commute,12/01/23,Ride,2.95,103,0.95
-Commute,11/22/23,Ride,2.97,104,0.95
-Commute,11/13/23,Ride,2.97,103,0.95
-Commute,11/15/23,Ride,2.97,103,0.95
-Commute,11/17/23,Ride,2.98,104,0.95
-Commute,02/14/24,Ride,2.96,100,0.94
-Commute,10/30/23,Ride,2.97,102,0.94
-Commute,11/20/23,Ride,2.97,102,0.94
-Commute,02/12/24,Ride,3.0,92,0.93
-Commute,05/15/24,Ride,2.93,101,0.93
-Commute,02/05/24,Ride,2.94,100,0.93
-Commute,04/04/24,Ride,3.49,23,0.92
-Commute,11/01/23,Ride,2.87,91,0.9
-Commute,10/23/23,Ride,2.88,91,0.9
-Commute,11/12/23,Ride,2.83,64,0.84
-Commute,05/07/24,Ride,2.89,61,0.84
-Sprint,08/17/19,Ride,2.14,133,0.82
-Morning Hike,10/20/24,Hike,0.72,8,0.74
-Commute,08/10/24,Ride,2.44,21,0.65
-Commute,10/11/23,Ride,0.93,40,0.31
-Indoor - Endurance - NCRB,02/13/21,Ride,0.0,0,0.0
-Indoor - SS - NCRB,02/11/21,Ride,0.0,0,0.0
-Indoor - SS - NCRB,02/09/21,Ride,0.0,0,0.0
-Masked FTP Test - NCRB,02/08/21,Ride,0.0,0,0.0
-Indoor - Thresh - NCRB,02/18/21,Ride,0.0,0,0.0
-Indoor - Endurance - NCRB,02/20/21,Ride,0.0,0,0.0
-Indoor - Endurance - Home,01/04/21,Ride,0.0,0,0.0
+Commute,10/09/23,Ride,3.26,79,0.94
+Commute,10/13/23,Ride,3.06,104,0.93
+Commute,11/27/23,Ride,3.05,104,0.92
+Commute,01/10/24,Ride,3.08,102,0.92
+Commute,11/29/23,Ride,3.06,103,0.91
+Commute,12/08/23,Ride,3.03,100,0.91
+Commute,10/16/23,Ride,3.01,100,0.9
+Commute,10/18/23,Ride,2.96,104,0.9
+Commute,11/08/23,Ride,2.98,104,0.9
+Commute,12/11/23,Ride,3.06,93,0.9
+Commute,11/22/23,Ride,2.97,104,0.9
+Commute,11/15/23,Ride,2.97,103,0.9
+Commute,04/04/24,Ride,3.49,23,0.9
+Commute,12/01/23,Ride,2.95,103,0.9
+Commute,11/17/23,Ride,2.98,104,0.9
+Commute,02/14/24,Ride,2.96,100,0.89
+Commute,10/25/23,Ride,2.94,103,0.89
+Commute,10/20/23,Ride,2.97,103,0.89
+Commute,02/12/24,Ride,3.0,92,0.89
+Commute,10/30/23,Ride,2.97,102,0.89
+Commute,10/27/23,Ride,2.96,103,0.89
+Commute,11/20/23,Ride,2.97,102,0.89
+Commute,11/13/23,Ride,2.97,103,0.89
+Commute,05/15/24,Ride,2.93,101,0.88
+Commute,02/05/24,Ride,2.94,100,0.88
+Commute,10/25/23,Ride,2.47,168,0.87
+Commute,11/01/23,Ride,2.87,91,0.86
+Commute,10/23/23,Ride,2.88,91,0.86
+Baits Downhill,09/16/19,MountainBikeRide,1.18,248,0.85
+Commute,05/07/24,Ride,2.89,61,0.81
+Commute,11/12/23,Ride,2.83,64,0.81
+Sprint,08/17/19,Ride,2.14,133,0.75
+Commute,08/10/24,Ride,2.44,21,0.64
+Morning Hike,10/20/24,Hike,0.72,8,0.56
+Lunch Run,01/04/26,Run,0.48,18,0.52
+Commute,10/11/23,Ride,0.93,40,0.29
+Masked FTP Test - NCRB,03/18/21,Ride,0.0,0,0.0
 Indoor - SS - NCRB,01/25/21,Ride,0.0,0,0.0
 Indoor - VO2 - NCRB,01/21/21,Ride,0.0,0,0.0
-Indoor - Endurance - Home,01/05/21,Ride,0.0,0,0.0
-Indoor - SS - Home,01/08/21,Ride,0.0,0,0.0
-Indoor - Thresh - NCRB,02/24/21,Ride,0.0,0,0.0
-Indoor - VO2 - Home,01/10/21,Ride,0.0,0,0.0
-Indoor - Endurance - Home,01/11/21,Ride,0.0,0,0.0
-Indoor - VO2 - NCRB,02/23/21,Ride,0.0,0,0.0
-Indoor - Endurance - Home,01/01/21,Ride,0.0,0,0.0
-Indoor - SS - CCRB,01/17/21,Ride,0.0,0,0.0
+Morning Ride,12/26/25,Ride,0.0,0,0.0
+Lunch Ride,12/25/25,Ride,0.0,0,0.0
 Indoor - Endurance - NCRB,01/19/21,Ride,0.0,0,0.0
-Indoor - Endurance - NCRB,01/26/21,Ride,0.0,0,0.0
-45 Min Endurance Peloton,01/03/22,Ride,0.0,0,0.0
-Indoor - SS - Home,12/30/20,Ride,0.0,0,0.0
-Indoor - Sprint - Home,12/29/20,Ride,0.0,0,0.0
-45 Min Power Zone Peloton,01/07/22,Ride,0.0,0,0.0
-Indoor VO2 - MCycling,02/04/22,Ride,0.0,0,0.0
-Indoor - VO2 - MCycling,02/10/22,Ride,0.0,0,0.0
-Indoor - VO2 - MCycling,02/16/22,Ride,0.0,0,0.0
-Indoor - VO2 - NCRB,02/15/21,Ride,0.0,0,0.0
-Indoor - Sprint - NCRB,04/20/21,Ride,0.0,0,0.0
-30 Min Endurance Peloton,12/24/21,Ride,0.0,0,0.0
-Indoor - SS - NCRB,04/15/21,Ride,0.0,0,0.0
-Indoor - VO2 - NCRB,04/05/21,Ride,0.0,0,0.0
-Indoor - Sprint - NCRB,03/29/21,Ride,0.0,0,0.0
-Ramp Test - CCRB,03/28/21,Ride,0.0,0,0.0
-Masked FTP Test - NCRB,03/18/21,Ride,0.0,0,0.0
-Indoor - SS - NCRB,03/15/21,Ride,0.0,0,0.0
-Indoor - Endurance - CCRB,03/06/21,Ride,0.0,0,0.0
-Indoor - Thresh - NCRB,03/04/21,Ride,0.0,0,0.0
-Indoor - SS - NCRB,03/02/21,Ride,0.0,0,0.0
-Indoor - VO2 - NCRB,03/01/21,Ride,0.0,0,0.0
-Indoor - SS - NCRB,02/26/21,Ride,0.0,0,0.0
 Masked FTP Test - NCRB,12/07/20,Ride,0.0,0,0.0
+Indoor - SS - CCRB,01/17/21,Ride,0.0,0,0.0
 Indoor - VO2 - NCRB,12/15/20,Ride,0.0,0,0.0
 Indoor - Endurance - NCRB,12/17/20,Ride,0.0,0,0.0
 Indoor - Endurance - Home,12/24/20,Ride,0.0,0,0.0
 Indoor - Endurance - Home,12/25/20,Ride,0.0,0,0.0
+Indoor - VO2 - NCRB,04/05/21,Ride,0.0,0,0.0
+Indoor - SS - NCRB,04/15/21,Ride,0.0,0,0.0
+Indoor - Sprint - NCRB,04/20/21,Ride,0.0,0,0.0
+Indoor - Endurance - Home,01/11/21,Ride,0.0,0,0.0
+Indoor - Sprint - Home,12/29/20,Ride,0.0,0,0.0
+Indoor - SS - Home,12/30/20,Ride,0.0,0,0.0
+Indoor - VO2 - Home,01/10/21,Ride,0.0,0,0.0
+Indoor - Endurance - Home,01/01/21,Ride,0.0,0,0.0
+Indoor - SS - Home,01/08/21,Ride,0.0,0,0.0
+Indoor - Endurance - Home,01/04/21,Ride,0.0,0,0.0
+Indoor - Endurance - Home,01/05/21,Ride,0.0,0,0.0
+Indoor - Endurance - NCRB,01/26/21,Ride,0.0,0,0.0
+30 Min Endurance Peloton,12/24/21,Ride,0.0,0,0.0
+Masked FTP Test - NCRB,02/08/21,Ride,0.0,0,0.0
+Indoor - SS - NCRB,02/26/21,Ride,0.0,0,0.0
+Indoor - Endurance - CCRB,03/06/21,Ride,0.0,0,0.0
+Indoor - VO2 - MCycling,02/10/22,Ride,0.0,0,0.0
+Indoor - VO2 - MCycling,02/16/22,Ride,0.0,0,0.0
+Indoor - Thresh - NCRB,03/04/21,Ride,0.0,0,0.0
+45 Min Power Zone Peloton,01/07/22,Ride,0.0,0,0.0
+45 Min Endurance Peloton,01/03/22,Ride,0.0,0,0.0
+Ramp Test - CCRB,03/28/21,Ride,0.0,0,0.0
+Indoor - SS - NCRB,03/02/21,Ride,0.0,0,0.0
+Morning Ride,12/29/25,Ride,0.0,0,0.0
+Indoor - VO2 - NCRB,03/01/21,Ride,0.0,0,0.0
+Morning Ride,12/28/25,Ride,0.0,0,0.0
+Indoor VO2 - MCycling,02/04/22,Ride,0.0,0,0.0
+Indoor - Thresh - NCRB,02/24/21,Ride,0.0,0,0.0
+Indoor - VO2 - NCRB,02/23/21,Ride,0.0,0,0.0
+Indoor - Endurance - NCRB,02/20/21,Ride,0.0,0,0.0
+Indoor - Thresh - NCRB,02/18/21,Ride,0.0,0,0.0
+Indoor - Sprint - NCRB,03/29/21,Ride,0.0,0,0.0
 Indoor - SS - NCRB,02/16/21,Ride,0.0,0,0.0
+Indoor - VO2 - NCRB,02/15/21,Ride,0.0,0,0.0
+Indoor - Endurance - NCRB,02/13/21,Ride,0.0,0,0.0
+Indoor - SS - NCRB,02/11/21,Ride,0.0,0,0.0
+Indoor - SS - NCRB,02/09/21,Ride,0.0,0,0.0
+Indoor - SS - NCRB,03/15/21,Ride,0.0,0,0.0

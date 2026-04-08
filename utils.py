@@ -54,7 +54,7 @@ def load_data(refresh):
             token_expires=token_response["expires_at"],
             )
 
-        activities = client.get_activities(limit=1000)
+        activities = client.get_activities(limit=1500)
 
         data = []
 
@@ -144,17 +144,19 @@ def refresh_data_pipeline():
             "Run": 1,
             "TrailRun": 1,
             "NordicSki": 1,
-            "Hike": 1#(4/3)
+            "Hike": 4/3, #1
+            "BackcountrySki": 2
         }
 
         activities_elevation_scalar = {
-            "Ride": 2,
-            "MountainBikeRide": 2,
-            "GravelRide": 2,
+            "Ride": 1.5,
+            "MountainBikeRide": 1.5,
+            "GravelRide": 1.5,
             "Run": 2,
             "TrailRun": 2,
             "NordicSki": 2,
-            "Hike": 2
+            "Hike": 2,
+            "BackcountrySki": 2
         }
 
         partial_scramble_adjustment = { # Currently, 1 + (the percentage of mileage off trail rounded to nearest 0.1)
@@ -163,7 +165,10 @@ def refresh_data_pipeline():
             'Black Peak': 1.2,
             "Earl + Bean + Devil’s Head": 1.2,
             "Mount Storm King": 1.1,
-            "Luahna Peak": 1.3
+            "Luahna Peak": 1.3,
+            "Mount Daniel": 1.1,
+            "Carne High Route": 1.1,
+            "P3 + Web + Defiance + Bandera": 1.1
         }
 
         # Partial Backpacking adjustment ( currently, 1.10x the hike score for both distance and elevation) My pack is ~35lbs, vs ~15lb on a regular hike)
@@ -177,24 +182,36 @@ def refresh_data_pipeline():
             "Devil’s Dome - Day 1": 1.1,
             "Devil’s Dome - Day 2": 1.1,
             "Devil’s Dome - Day 3": 1.075, # Peak without backpack
-            "Devil’s Dome - Day 4": 1.1
+            "Devil’s Dome - Day 4": 1.1,
+            "Camp Muir": 1.1,
+            "Crystal Uphill": 1.1,
+            "Table Mountain Circumnav": 1.1,
+            "Hyak Laps": 1.1,
+            "Summit West Laps": 1.1,
+            "Silver Fir Laps": 1.1
         }
 
+#https://medium.com/aha-science/walk-vs-run-which-is-most-efficient-93e444279443
         partial_trail_run_adjustment = {
-            # "Mt. Teneriffe + Mt. Si": 0.25,
-            # "Spray Park Loop": 0.5,
-            # "Oyster Dome Loop": 0.75,
-            # "Cutthroat Pass": 0.25,
-            # "Trappers Peak / Thornton Lakes": 0.25,
-            # "Trap Pass": 0.25,
-            # "Mailbox Peak": 0.5,
-            # "Goat Lake": 0.75,
-            # "Green Mountain": 0.75,
-            # "Granite Lake": 0.5,
-            # "Earl + Bean + Devil’s Head": 0.25,
-            # "Olallie & Talapus Lakes": 0.5,
-            # "Black Peak": 0.25,
-            # "McClellan Butte": 0.5
+            "Mt. Teneriffe + Mt. Si": 0.25,
+            "Spray Park Loop": 0.5,
+            "Oyster Dome Loop": 0.75,
+            "Cutthroat Pass": 0.25,
+            "Trappers Peak / Thornton Lakes": 0.25,
+            "Trap Pass": 0.25,
+            "Mailbox Peak": 0.5,
+            "Goat Lake": 0.75,
+            "Green Mountain": 0.75,
+            "Granite Lake": 0.5,
+            "Earl + Bean + Devil’s Head": 0.25,
+            "Olallie & Talapus Lakes": 0.5,
+            "Black Peak": 0.25,
+            "McClellan Butte": 0.5,
+            "Alta Mountain + Rampart Ridge": 0.25,
+            "Mount Daniel": 0.25,
+            "Carne High Route": 0.25,
+            "P3 + Web + Defiance + Bandera": 0.25,
+            "Dirty Harry’s Balcony": 0.5
         }
 
         def update_ptra(partial_trail_run_adjustment):
@@ -214,8 +231,11 @@ def refresh_data_pipeline():
              "BLOM / Island Lake": 2.5/(0.25*2.5 + 0.75*3),
              "Island Lake": 2.5/(0.25*2.5 + 0.75*3),
              "Waterloo + DTE": 2.5/(0.25*2.5 + 0.75*3),
-             "Thrilla + North Lake Washington": 3/(0.5*3 + 0.5*4),
-             "Duvall + Marckworth Forest": 3/(0.5*3 + 0.5*4)
+             "Thrilla + North Lake Washington": 3/(0.5*3.5 + 0.5*4), # Gravel with the new bike gets 3.5, closer to road
+             "Duvall + Marckworth Forest": 3/(0.5*3.5 + 0.5*4),
+             "Snoqualmie Valley Trail": 3/(0.5*3.5 + 0.5*4),
+             "Palouse to Cascades Trail": 3/3.5
+
 
         }
 
@@ -261,7 +281,7 @@ def refresh_data_pipeline():
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_scramble_adjustment.get(x, 1))).round(2)
         filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
 
-        # Calculate the elevation score (2x for cycling, 3x for everything else)
+        # Calculate the elevation score (1.5x for cycling, 2x for everything else)
         filtered_activities["elev_high"] = filtered_activities["elev_high"].fillna(0) #Temporary fix for missing elevation data
         filtered_activities["elev_low"] = filtered_activities["elev_low"].fillna(0)
         filtered_activities["total_elevation_gain"] = filtered_activities["total_elevation_gain"].fillna(0) #Temporary fix for missing elevation data
