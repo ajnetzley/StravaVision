@@ -14,6 +14,7 @@ import pickle
 import requests
 import numpy as np
 import warnings
+import re
 from datetime import datetime
 import streamlit as st
 from pandas.api.types import (
@@ -142,7 +143,7 @@ def refresh_data_pipeline():
             "MountainBikeRide": 2.5,
             "GravelRide": 3,
             "Run": 1,
-            "TrailRun": 1,
+            "TrailRun": 1/1.1,
             "NordicSki": 1,
             "Hike": 4/3, #1
             "BackcountrySki": 2
@@ -153,7 +154,7 @@ def refresh_data_pipeline():
             "MountainBikeRide": 1.5,
             "GravelRide": 1.5,
             "Run": 2,
-            "TrailRun": 2,
+            "TrailRun": 2*1.1,
             "NordicSki": 2,
             "Hike": 2,
             "BackcountrySki": 2
@@ -168,7 +169,14 @@ def refresh_data_pipeline():
             "Luahna Peak": 1.3,
             "Mount Daniel": 1.1,
             "Carne High Route": 1.1,
-            "P3 + Web + Defiance + Bandera": 1.1
+            "P3 + Web + Defiance + Bandera": 1.1,
+            "Switchback + Martin + Bigelow": 1.1,
+            "Three Fingers": 1.3,
+            "Vesper Peak": 1.2,
+            "South Ingalls": 1.3,
+            "Dragontail + Little Annapurna": 1.2,
+            "Cathedral Slam - Day 1": 1.1,
+            "Cathedral Slam - Day 2": 1.1,
         }
 
         # Partial Backpacking adjustment ( currently, 1.10x the hike score for both distance and elevation) My pack is ~35lbs, vs ~15lb on a regular hike)
@@ -188,7 +196,10 @@ def refresh_data_pipeline():
             "Table Mountain Circumnav": 1.1,
             "Hyak Laps": 1.1,
             "Summit West Laps": 1.1,
-            "Silver Fir Laps": 1.1
+            "Silver Fir Laps": 1.1,
+            "Silver Fir": 1.1,
+            "Cathedral Slam - Day 1": 1.075, # Peak without Backpack
+            "Cathedral Slam - Day 2": 1.05, # Peaks without Backpack
         }
 
 #https://medium.com/aha-science/walk-vs-run-which-is-most-efficient-93e444279443
@@ -211,21 +222,27 @@ def refresh_data_pipeline():
             "Mount Daniel": 0.25,
             "Carne High Route": 0.25,
             "P3 + Web + Defiance + Bandera": 0.25,
-            "Dirty Harry’s Balcony": 0.5
+            "Dirty Harry’s Balcony": 0.5,
+            "West Tiger 1 & 2": 0.75,
+            "West Tiger #3": 0.5,
+            "West Tiger 1 2 3": 0.75,
+            "Mt. Si": 0.5,
+            "Poo Poo Point": 0.5,
+            "French Cabin + Kachess Ridge": 0.25,
+            "Johnson + Malcolm + Koppen": 0.5,
+            "High Divide Loop": 0.75,
+            "Mount Dickerman": 0.5,
+            "Guye Peak": 0.5,
+            "Cable Line": 0.75,
+            "Dragontail + Little Annapurna": 0.25,
+            "Cathedral Slam - Day 2": 0.5
         }
 
-        def update_ptra(partial_trail_run_adjustment):
-            updated_ptra = {}
-            for key, value in partial_trail_run_adjustment.items():
-                if value == 0.25:
-                    # if the value is 0.25, this means it is designated as a hike and has already been scaled, so we need to unscale
-                    updated_ptra[key] = (4/3)*(3/4 + value/4)
-                else:
-                    # other values indicate that this is categorized as a TrailRun, meaning we need to scale down.
-                    updated_ptra[key] = (3/4 + value/4)
-            return updated_ptra
-
-        updated_partial_trail_run_adjustment = update_ptra(partial_trail_run_adjustment)
+        # For partial trail/run activities we will compute a blended scalar
+        # when applying scalars below. The previous two-step approach (precompute
+        # `updated_partial_trail_run_adjustment` and also apply a correction
+        # factor) could double-apply the adjustment; we'll replace that with a
+        # single blended scalar function used for both distance and elevation.
 
         partial_gravel_ride_adjustment = {
              "BLOM / Island Lake": 2.5/(0.25*2.5 + 0.75*3),
@@ -237,6 +254,41 @@ def refresh_data_pipeline():
              "Palouse to Cascades Trail": 3/3.5
 
 
+        }
+
+        # Manual elevation overrides (feet) for specific activities.
+        # Add entries here as: "Activity Name": elevation_in_feet
+        elevation_override = {
+            # Example:
+            "Luahna Peak": 7069,
+            "Johnson + Malcolm + Koppen": 4949, #5430,
+            "Camp Muir": 4664,
+            "French Cabin + Kachess Ridge": 4775, #5012,
+            "P3 + Web + Defiance + Bandera": 5554, #6018,
+            "Carne High Route": 5769,#6094,
+            "Mount Daniel": 5519, #5730,
+            "Alta Mountain + Rampart Ridge": 4385,
+            "Vesper Peak": 4247,
+            "Black Peak": 5278,#5319,
+            "Earl + Bean + Devil’s Head": 4720,
+            "Oyster Dome Loop": 3844,
+            "Trappers Peak + Thornton Lake": 4242,
+            "Spray Park Loop": 5282, #5148,
+            "Old Snowy + Knife’s Edge": 4790,
+            "Enchanments": 5173,#5251,
+            "Granite Mountain": 3560,
+            "Johnston’s + Harry’s Ridge": 3499,
+            "Mailbox Peak": 4035,
+            "Mt. Teneriffe + Mt. Si": 7531,
+            "Longs Peak & Mt. Meeker": 6247,
+            "Andrew’s Glacier + Taylor + Hallett": 5128,#4798,
+            "Switchback + Martin + Bigelow": 6894,
+            "High Divide Loop": 5184,
+            "Three Fingers": 5803,
+            "South Ingalls": 4380,
+            "Dragontail + Little Annapurna": 7285,
+            "Cathedral Slam - Day 1": 6877,
+            "Cathedral Slam - Day 2": 3473
         }
 
         def convert_timestamp(timestamp):
@@ -274,19 +326,115 @@ def refresh_data_pipeline():
         # Calculate the city, state, and country from the start_latlng
         filtered_activities["location_city"], filtered_activities["location_state"], filtered_activities["location_country"] = zip(*filtered_activities["start_latlng"].apply(extract_location))
 
-        # Calculate the distance score (miles, adjusted for sport type. There is also custom adjustments for partial gravel rides and trail runs
-        filtered_activities["distance_score"] = (df["distance"]*0.000621371)/ df["sport_type"].map(lambda x: activities_distance_scalar.get(x, 1))
-        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_gravel_ride_adjustment.get(x, 1))).round(2)
-        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: updated_partial_trail_run_adjustment.get(x, 1))).round(2)
-        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_scramble_adjustment.get(x, 1))).round(2)
-        filtered_activities["distance_score"] = (filtered_activities["distance_score"]*df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
+        # Calculate the distance score (miles) using a blended base scalar for
+        # partial trail/run activities (applied once). For activities listed in
+        # `partial_trail_run_adjustment`, the value N is the portion that is a
+        # trail run, so the blended scalar = N*trail_scalar + (1-N)*hike_scalar.
+        def _base_distance_scalar(row):
+            sport = row.get("sport_type")
+            name = row.get("name")
+            p = partial_trail_run_adjustment.get(name, None)
+            if p is not None:
+                trail = activities_distance_scalar.get("TrailRun", 1)
+                hike = activities_distance_scalar.get("Hike", 1)
+                return p * trail + (1 - p) * hike
+            return activities_distance_scalar.get(sport, 1)
+
+        base_distance = df.apply(_base_distance_scalar, axis=1)
+        filtered_activities["distance_score"] = (df["distance"] * 0.000621371) / base_distance
+        filtered_activities["distance_score"] = (filtered_activities["distance_score"] * df["name"].map(lambda x: partial_gravel_ride_adjustment.get(x, 1))).round(2)
+        filtered_activities["distance_score"] = (filtered_activities["distance_score"] * df["name"].map(lambda x: partial_scramble_adjustment.get(x, 1))).round(2)
+        filtered_activities["distance_score"] = (filtered_activities["distance_score"] * df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
+
+                # Attach debug columns with partial adjustment details used by distance
+        # and elevation calculations. Include base scalars (blended where
+        # applicable) and each per-activity manual adjustment (or 1 if absent).
+        def _partial_adjustments_distance(row):
+            name = row.get("name")
+            try:
+                base_val = float(base_distance.loc[row.name])
+            except Exception:
+                base_val = activities_distance_scalar.get(row.get("sport_type"), 1)
+            return {
+                "base_distance": 1/base_val,
+                "partial_trail_run": partial_trail_run_adjustment.get(name, 1),
+                "partial_gravel_ride": partial_gravel_ride_adjustment.get(name, 1),
+                "partial_scramble": partial_scramble_adjustment.get(name, 1),
+                "partial_backpacking": partial_backpacking_adjustment.get(name, 1),
+            }
+
+        def _partial_adjustments_elevation(row):
+            name = row.get("name")
+            try:
+                base_val = float(base_elev.loc[row.name])
+            except Exception:
+                base_val = activities_elevation_scalar.get(row.get("sport_type"), 1)
+            return {
+                "base_elevation": base_val,
+                "partial_trail_run": partial_trail_run_adjustment.get(name, 1),
+                "partial_backpacking": partial_backpacking_adjustment.get(name, 1),
+            }
+
+
+
 
         # Calculate the elevation score (1.5x for cycling, 2x for everything else)
         filtered_activities["elev_high"] = filtered_activities["elev_high"].fillna(0) #Temporary fix for missing elevation data
         filtered_activities["elev_low"] = filtered_activities["elev_low"].fillna(0)
-        filtered_activities["total_elevation_gain"] = filtered_activities["total_elevation_gain"].fillna(0) #Temporary fix for missing elevation data
-        filtered_activities["elevation_score"] = (filtered_activities["total_elevation_gain"] * 3.28084 * 0.001) * filtered_activities["sport_type"].map(lambda x: activities_elevation_scalar.get(x, 1))
-        filtered_activities["elevation_score"] = (filtered_activities["elevation_score"]*df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
+        filtered_activities["total_elevation_gain"] = filtered_activities["total_elevation_gain"].fillna(0) * 3.28084 #Temporary fix for missing elevation data
+
+        # Apply elevation manual override here
+        if elevation_override:
+            # elevation_override keys are activity names, values are elevation in feet
+            for act_name, elev_ft in elevation_override.items():
+                try:
+                    mask = filtered_activities["name"] == act_name
+                except Exception:
+                    # If name column is missing, skip
+                    mask = pd.Series(False, index=filtered_activities.index)
+
+                if mask.any():
+                    filtered_activities.loc[mask, "total_elevation_gain"] = float(elev_ft)
+                    warnings.warn(f"Applied elevation override for '{act_name}': {elev_ft} ft")
+
+        # --- Debug: per-activity elevation scaler combining elevation adjustments ---
+        def _base_elevation_scalar(row):
+            sport = row.get("sport_type")
+            name = row.get("name")
+            p = partial_trail_run_adjustment.get(name, None)
+            if p is not None:
+                trail = activities_elevation_scalar.get("TrailRun", 1)
+                hike = activities_elevation_scalar.get("Hike", 1)
+                return p * trail + (1 - p) * hike
+            return activities_elevation_scalar.get(sport, 1)
+
+        def _compute_activity_elevation_scaler(row):
+            base = _base_elevation_scalar(row)
+            backpack = partial_backpacking_adjustment.get(row.get("name"), 1)
+            scramble = partial_scramble_adjustment.get(row.get("name"), 1)
+            try:
+                scaler = float(base) * float(backpack) * float(scramble)
+            except Exception:
+                scaler = 1.0
+            return round(scaler, 6)
+
+        # Apply blended elevation base scalar once, then apply backpacking adjustment
+        base_elev = df.apply(_base_elevation_scalar, axis=1)
+        filtered_activities["elevation_score"] = (filtered_activities["total_elevation_gain"] * 0.001) * base_elev
+        filtered_activities["elevation_score"] = (filtered_activities["elevation_score"] * df["name"].map(lambda x: partial_backpacking_adjustment.get(x, 1))).round(2)
+
+
+        filtered_activities["partial_adjustments_distance"] = df.apply(_partial_adjustments_distance, axis=1)
+        filtered_activities["partial_adjustments_elevation"] = df.apply(_partial_adjustments_elevation, axis=1)
+
+        #Mulitply all the dict items together to get the scalers for distance and elevation
+        
+        filtered_activities["activity_distance_scaler"] = filtered_activities["partial_adjustments_distance"].apply(
+            lambda d: (float(d.get("base_distance", 1))) * float(d.get("partial_gravel", 1)) * float(d.get("partial_scramble", 1)) * float(d.get("partial_backpacking", 1))
+        )
+        filtered_activities["activity_elevation_scaler"] = filtered_activities["partial_adjustments_elevation"].apply(
+            lambda d:  float(d.get("base_elevation", 1)) * float(d.get("partial_backpacking", 1)) 
+        )
 
         # Calculate the combined difficulty score
         filtered_activities["difficulty_score_without_altitude"] = filtered_activities["distance_score"] + filtered_activities["elevation_score"]
@@ -298,7 +446,7 @@ def refresh_data_pipeline():
 
         # Convert raw distance, elevation, and date to readable formats
         filtered_activities["Distance (miles)"] = (filtered_activities["distance"]*0.000621371).round(2)
-        filtered_activities["Total Elevation Gain (ft)"] = (filtered_activities["total_elevation_gain"]*3.28084).round(0).astype(int)
+        filtered_activities["Total Elevation Gain (ft)"] = (filtered_activities["total_elevation_gain"]).round(0).astype(int)
         filtered_activities["Date"] = filtered_activities["start_date"].apply(convert_timestamp)
 
         filtered_activities["elev_high"] *= 3.28084
@@ -318,6 +466,25 @@ def refresh_data_pipeline():
         # Execute the data processing for each page, saving each after
         hardest_overall_activities = process_hardest_activities(filtered_activities)
         hardest_overall_activities.to_csv("activities_data/hardest_activities.csv", index=False)
+
+        # filter filtered activies to only the trail run and hike activities, with only the c,olumns of name and all the pieces that make up the elevatio nand distance score
+        filtered_activities = filtered_activities[filtered_activities['Sport Type'].isin(['TrailRun', 'Hike'])]
+        filtered_activities = filtered_activities[["Activity Name", 
+                                                   "Sport Type",
+                                                   "Distance (miles)", 
+                                                   "distance_score",
+                                                   "activity_distance_scaler",
+                                                   "average_elevation",
+                                                   "Total Elevation Gain (ft)", 
+                                                   "elevation_score",
+                                                   "activity_elevation_scaler",
+                                                   "difficulty_score_without_altitude",
+                                                   "performance_capacity",
+                                                   "Difficulty Score",
+                                                   "partial_adjustments_distance",
+                                                   "partial_adjustments_elevation"
+                                                   ]]
+
 
         sky_log_activities = process_sky_log(filtered_activities)
         sky_log_activities.to_csv("activities_data/sky_log_activities.csv", index=False)
@@ -360,13 +527,13 @@ def process_sky_log(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: Processed DataFrame with relevant columns and sorted by difficulty score.
     """
     # Filter out activities without elevation
-    df = df[df['elev_high'] > 0]
+    #df = df[df['elev_high'] > 0]
 
     # Extract relevant columns
     #df = df[["Activity Name", "Date", "Sport Type", "Distance (miles)", "Total Elevation Gain (ft)", "Difficulty Score"]]
 
     # Sort by difficulty score
-    sky_log_activities = df.sort_values(by="elev_high", ascending=False).reset_index(drop=True)
+    sky_log_activities = df#.sort_values(by="elev_high", ascending=False).reset_index(drop=True)
 
     return sky_log_activities
 
@@ -472,6 +639,19 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                     f"Substring or regex in {column}",
                 )
                 if user_text_input:
-                    df = df[df[column].str.contains(user_text_input)]
+                    # Safely handle NaNs and treat the input as a literal substring by default
+                    # Use regex=False to avoid bad escape errors from user input
+                    try:
+                        mask = df[column].fillna("").astype(str).str.contains(
+                            user_text_input, case=False, regex=False, na=False
+                        )
+                    except Exception:
+                        # Fallback: escape the pattern and try again as regex
+                        escaped = re.escape(user_text_input)
+                        mask = df[column].fillna("").astype(str).str.contains(
+                            escaped, case=False, regex=True, na=False
+                        )
+
+                    df = df[mask]
 
     return df
